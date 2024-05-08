@@ -21,13 +21,12 @@
 
 .header__top__right__social {
 	position: relative;
-	display: inline-block;
+	display:inline-block;
 	margin-right: 35px;
 }
 
 .header__top__right__social a {
 	font-size: 14px;
-	display: inline-block;
 	color: black;
 	margin-right: 20px;
 }
@@ -40,7 +39,7 @@
 
 .header__top__right__language {
 	position: relative;
-	display: inline-block;
+	display:inline-block;
 	margin-right: 40px;
 	cursor: pointer;
 }
@@ -60,9 +59,10 @@
 
 .header__top__right__language:hover div{
 	font-size: 16px;
+	color: rebeccapurple
 }
 
-.header__top__right__language svg {
+.header__top__right__language div + svg {
 	font-size: 14px;
 	color: #1c1c1c;
 	position: relative;
