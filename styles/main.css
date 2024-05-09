@@ -101,10 +101,13 @@
     font-size: 16PX;
     color: black;
 }
+.container-hd {
+	padding: 16px;
+  }
 /* end header */
 
 @media only screen and (min-width: 1200px) {
-	.container {
+	.container-hd {
 		max-width: 1170px;
 	}
 }
@@ -127,6 +130,9 @@ a:focus {
 	text-decoration: none;
 	outline: none;
 	color: #ffffff;
+}
+.container-menu{
+	padding: 16px;
 }
 .header__logo {
 	text-align: center;
@@ -219,8 +225,8 @@ a:focus {
 .humberger__open {
 	display: none;
 }
-
-input[type=text], input[type=password] {
+/*--login--*/
+.user, .pass {
 	width: 100%;
 	padding: 12px 20px;
 	margin: 8px 0;
@@ -228,33 +234,32 @@ input[type=text], input[type=password] {
 	border: 1px solid #ccc;
 	box-sizing: border-box;
   }
-  
-  
+
+  .container-frm{
+	padding: 16px;
+  }
+  .container-qm{
+	padding: 16px;
+  }
   button:hover {
 	opacity: 0.8;
   }
-  
-  
   .cancelbtn {
 	width: auto;
 	padding: 10px 18px;
 	background-color: #f44336;
   }
   
- 
-  .imgcontainer {
+  .container-lg {
 	text-align: center;
 	margin: 24px 0 12px 0;
 	position: relative;
+	padding: 16px;
   }
   
   img.avatar {
 	width: 40%;
 	border-radius: 50%;
-  }
-  
-  .container {
-	padding: 16px;
   }
   
   span.psw {
@@ -275,17 +280,15 @@ input[type=text], input[type=password] {
 	background-color: rgba(0,0,0,0.4); 
 	padding-top: 60px;
   }
-  /* Modal Content/Box */
+
   .modal-content {
 	background-color: #fefefe;
 	margin: 5px auto; 
 	border: 1px solid #888;
 	width: 80%; 
   }
-  
-  /* The Close Button */
-  .close {
 
+  .close {
 	position: absolute;
 	right: 25px;
 	top: 0;
@@ -293,15 +296,13 @@ input[type=text], input[type=password] {
 	font-size: 35px;
 	font-weight: bold;
   }
-  
-  /* Close button on hover */
+
   .close:hover,
   .close:focus {
 	color: red;
 	cursor: pointer;
   }
   
-  /* Add Zoom Animation */
   .animate {
 	-webkit-animation: animatezoom 0.6s;
 	animation: animatezoom 0.6s
