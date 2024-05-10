@@ -234,7 +234,6 @@ a:focus {
 	border: 1px solid #ccc;
 	box-sizing: border-box;
   }
-
   .container-frm{
 	padding: 16px;
   }
@@ -283,9 +282,10 @@ a:focus {
 
   .modal-content {
 	background-color: #fefefe;
-	margin: 5px auto; 
+	margin-left: 25%;
+	margin-top: -3%;
 	border: 1px solid #888;
-	width: 80%; 
+	width: 50%;
   }
 
   .close {
@@ -316,6 +316,15 @@ a:focus {
   @keyframes animatezoom {
 	from {transform: scale(0)}
 	to {transform: scale(1)}
+  }
+  @media screen and (max-width: 300px) {
+	span.psw {
+	   display: block;
+	   float: none;
+	}
+	.cancelbtn {
+	   width: 100%;
+	}
   }
 /*end menu*/
 
