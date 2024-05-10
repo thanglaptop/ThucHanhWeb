@@ -333,7 +333,10 @@ a:focus {
 .thanhtimkiem{
 	border-top: 2px#f5f5f5 groove;
 	border-bottom:2px#f5f5f5 groove;
-	display:block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid black;
 }
 
 .thanhtimkiem__logo{
@@ -342,6 +345,7 @@ a:focus {
 	height: 100%;
 	align-items: center;
 	justify-content: center;
+	margin-right: 150px;
 }
 
 .thanhtimkiem__logo img{
@@ -523,4 +527,10 @@ a:focus {
 		padding-bottom: 10px;
 	}
 } 
+
+@media only screen and (min-width: 1200px) {
+	.container-srch {
+		max-width: 1170px;
+	}
+}
 /* end tim kiem */
