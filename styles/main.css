@@ -336,7 +336,6 @@ a:focus {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: 1px solid black;
 }
 
 .thanhtimkiem__logo{
@@ -378,8 +377,7 @@ a:focus {
 	width: 23%;
 	height: 35px;
 	font-size: 16px;
-	color: #1c1c1c;
-	font-weight: 700;
+	color: black;
 	padding-left: 10px;
 	padding-top: 5px;
 	margin-top: 6px;
@@ -490,6 +488,25 @@ a:focus {
 	background-color: #ff9933;
 	border-radius: 20%;	
 }
+@media screen and (max-width: 400px){
+	.thanhtimkiem__search__form{
+		width: 360px;
+		margin-left: 5px;
+	}
+	.thanhtimkiem__search__form form .thanhtimkiem__search__theloai{
+		font-weight: 100;
+		padding-left: 6px;
+	}
+	.thanhtimkiem__search__canhan svg{
+		width: 25px;
+		height: 25px;
+		padding: 2.5px 2.5px;
+}
+.thanhtimkiem__search__form form .thanhtimkiem__search__theloai a{
+	font-size: xx-small;
+	padding: 0px 0px;
+}
+}
 
  @media screen and (max-width: 768px){
 	.thanhtimkiem__search{
@@ -515,7 +532,8 @@ a:focus {
 		font-size: 12px;
 	}
 	.thanhtimkiem__search__form form input{
-		width: 63%;
+		width: 60%;
+		margin-left: 2px;
 	}
 } 
 
