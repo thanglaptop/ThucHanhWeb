@@ -336,7 +336,6 @@ a:focus {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: 1px solid black;
 }
 
 .thanhtimkiem__logo{
@@ -490,47 +489,69 @@ a:focus {
 	background-color: #ff9933;
 	border-radius: 20%;	
 }
-
- @media screen and (max-width: 768px){
-	.thanhtimkiem__search{
-		padding-bottom: 10px;
-	}
-	.thanhtimkiem__search__canhan{
-		padding-bottom: 10px;
-	}
-	.thanhtimkiem__search__form form .thanhtimkiem__search__theloai {
-		font-size: 14px;
-	}
-	.thanhtimkiem__search__form form .thanhtimkiem__search__theloai svg{
-		position: absolute;
-		top:23px;
-		left:30px;
-	}
-	.thanhtimkiem__search__form form .thanhtimkiem__search__theloai a{
-		font-size: 11px;
-	}
-	
-	.thanhtimkiem__search__form form .thanhtimkiem__search__theloai a:hover{
-		color: white;
-		font-size: 12px;
-	}
-	.thanhtimkiem__search__form form input{
-		width: 63%;
-	}
-} 
-
-@media screen and (max-width: 992px){
-	.thanhtimkiem__search{
-		padding-bottom: 10px;
-	}
-	.thanhtimkiem__search__canhan{
-		padding-bottom: 10px;
-	}
-} 
-
 @media only screen and (min-width: 1200px) {
-	.container-srch {
+	.container_srch{
 		max-width: 1170px;
 	}
 }
 /* end tim kiem */
+
+
+/* slide show */
+.slideshow{
+	border: 1px solid black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 600px;
+}
+@media only screen and (min-width: 1200px) {
+	.container_sldshow{
+		max-width: 1170px;
+	}
+}
+.slide{
+	width: 500px;
+	overflow: hidden;
+	position: relative;
+}
+.list_images{
+	display: flex;
+	transition: 0.5s;
+}
+
+.btns:hover {
+	color: white;
+}
+.btns {
+	font-size: 45px;
+	color: #f44336;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: 0.5s;
+	cursor: pointer;
+}
+.btns-left {
+	left: 0;
+}
+.btns-right {
+	right: 0;
+}
+.index-images {
+	position: absolute;
+	bottom: 10px;
+	display: flex;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.index-item {
+	border: 2px solid #999;
+	padding: 10px;
+	margin: 3px;
+	border-radius: 50%;
+}
+.active {
+	background-color: #999;
+}
+/* end slide show */

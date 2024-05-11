@@ -10,6 +10,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Web Sách</title>
 </head>
 
@@ -105,41 +106,18 @@
                                 title="Close Modal">&times;</span>
 
                             <!--content-->
-                                <form class="modal-content animate" action="/img/gia_huy.jpg">
-                                    <div class="container-lg">
-                                        <img src="/img/gia_huy.jpg" alt="Avatar" class="avatar">
-                                    </div>
-                                  
-                                      <div class="container-frm">
-                                        <label for="uname"><b>Tài khoản</b></label>
-                                        <input type="text" placeholder="Enter Username" name="uname" required class="user">
-                                  
-                                        <label for="psw"><b>Mật khẩu</b></label>
-                                        <input type="password" placeholder="Enter Password" name="psw" required class="pass">
-                                  
-                                        <button id="login" type="submit" class="btn btn-primary">Đăng nhập</button>
-                                        <label>
-                                          <input type="checkbox" checked="checked" name="remember"> Lưu mật khẩu
-                                        </label>
-                                      </div>
-                                  
-                                      <div class="container-qm" style="background-color:#f1f1f1">
-                                        <button class="btn btn-primary" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cút</button>
-                                        <span class="psw"><a href="#">Quên mật khẩu</a></span>
-                                      </div>
-                                </form>
-                                <!--end form-->
                             <form class="modal-content animate" action="/img/gia_huy.jpg">
-                                <div class="imgcontainer">
+                                <div class="container-lg">
                                     <img src="/img/gia_huy.jpg" alt="Avatar" class="avatar">
                                 </div>
 
-                                <div class="container">
+                                <div class="container-frm">
                                     <label for="uname"><b>Tài khoản</b></label>
-                                    <input type="text" placeholder="Enter Username" name="uname" required>
+                                    <input type="text" placeholder="Enter Username" name="uname" required class="user">
 
                                     <label for="psw"><b>Mật khẩu</b></label>
-                                    <input type="password" placeholder="Enter Password" name="psw" required>
+                                    <input type="password" placeholder="Enter Password" name="psw" required
+                                        class="pass">
 
                                     <button id="login" type="submit" class="btn btn-primary">Đăng nhập</button>
                                     <label>
@@ -147,13 +125,14 @@
                                     </label>
                                 </div>
 
-                                <div class="container" style="background-color:#f1f1f1">
+                                <div class="container-qm" style="background-color:#f1f1f1">
                                     <button class="btn btn-primary" type="button"
                                         onclick="document.getElementById('id01').style.display='none'"
                                         class="cancelbtn">Cút</button>
                                     <span class="psw"><a href="#">Quên mật khẩu</a></span>
                                 </div>
                             </form>
+                            <!--end form-->
                             <!--end form-->
                         </div>
                         <script>
@@ -181,13 +160,13 @@
     <section class="thanhtimkiem">
         <div class="container-srch">
             <div class="row">
-                <div class="col-lg-2 col-12">
+                <div class="col-lg-2 col-md-2">
                     <div class="thanhtimkiem__logo">
                         <a href="./index.html">
                             <img width="100px" src="img/gia_huy.jpg" alt=""></a>
                     </div>
                 </div>
-                <div class="col-lg-7 col-9">
+                <div class="col-lg-7 col-9 col-sm-9 col-md-7">
                     <div class="thanhtimkiem__search">
                         <div class="thanhtimkiem__search__form">
                             <form action="#">
@@ -221,7 +200,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-3">
+                <div class="col-lg-3 col-3 col-sm-3 col-md-3">
                     <div class="thanhtimkiem__search__canhan">
                         <a href="">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -248,8 +227,38 @@
             </div>
         </div>
     </section>
-
     <!-- ket thuc tim kiem section -->
+
+    <!-- bat dau slide show -->
+    <section class="slideshow">
+        <div class="container_sldshow">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="slide">
+                        <div class="list_images">
+                            <img src="img/z4731130194617_8eadde9983aa29c454624629ffcd14f8.jpg" width="100%" alt="">
+                            <img src="img/gia_huy.jpg" width="100%" alt="">
+                            <img src="img/z4731130215486_6066f82aa5285fb68400539cb0985d6c.jpg" width="100%" alt="">
+                            <img src="img/z4722982846070_410b86424f6261e736ae45517e68b882.jpg" width="100%" alt="">
+                        </div>
+                        <div class="btnss">
+                            <div class="btns-left btns"><i class='bx bx-chevron-left'></i></div>
+                            <div class="btns-right btns"><i class='bx bx-chevron-right'></i></div>
+                        </div>
+                        <div class="index-images">
+                            <div class="index-item index-item-0 active"></div>
+                            <div class="index-item index-item-1"></div>
+                            <div class="index-item index-item-2"></div>
+                            <div class="index-item index-item-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/scripts.js"></script>
+    </section>
+    
+    <!-- end slideshow -->
 </body>
 
 </html>
