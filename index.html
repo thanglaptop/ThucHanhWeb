@@ -218,37 +218,69 @@
         </div>
     </section>
     <!-- ket thuc tim kiem section -->
-
     <!-- bat dau slide show -->
-    <section class="slideshow">
-        <div class="container_sldshow">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="slide">
-                        <div class="list_images">
-                            <img src="img/z4731130194617_8eadde9983aa29c454624629ffcd14f8.jpg" width="100%" alt="">
-                            <img src="img/gia_huy.jpg" width="100%" alt="">
-                            <img src="img/z4731130215486_6066f82aa5285fb68400539cb0985d6c.jpg" width="100%" alt="">
-                            <img src="img/z4722982846070_410b86424f6261e736ae45517e68b882.jpg" width="100%" alt="">
-                        </div>
-                        <div class="btnss">
-                            <div class="btns-left btns"><i class='bx bx-chevron-left'></i></div>
-                            <div class="btns-right btns"><i class='bx bx-chevron-right'></i></div>
-                        </div>
-                        <div class="index-images">
-                            <div class="index-item index-item-0 active"></div>
-                            <div class="index-item index-item-1"></div>
-                            <div class="index-item index-item-2"></div>
-                            <div class="index-item index-item-3"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="slideshow-container">
+        <!--hinh`-->
+        <div class="mySlides f">
+            <div class="numbertext">1 / 3</div>
+            <img src="/img/img_lights_wide.jpg" style="width: 100%;">
+            <div class="text">Caption Tex</div>
         </div>
-        <script src="js/scripts.js"></script>
-    </section>
-    
+        <!--hinh`-->
+        <div class="mySlides f">
+            <div class="numbertext">2 / 3</div>
+            <img src="/img/img_mountains_wide.jpg" style="width: 100%;">
+            <div class="text">Caption Two</div>
+        </div>
+        <!--hinh`-->
+        <div class="mySlides f">
+            <div class="numbertext">3 / 3</div>
+            <img src="/img/img_snow_wide.jpg" style="width: 100%;">
+            <div class="text">Caption Three</div>
+        </div>
+        <!--Chuyen qua chuye lai-->
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br>
+    <!-- cham -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    <!--js-->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
     <!-- end slideshow -->
-</body>
 
+    <!--list top sach-->
+    
+</body>
 </html>
