@@ -333,50 +333,56 @@ a:focus {
 .thanhtimkiem{
 	border-top: 2px#f5f5f5 groove;
 	border-bottom:2px#f5f5f5 groove;
-	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid black;
 }
 
 .thanhtimkiem__logo{
-	text-align: center;
-}
-
-.thanhtimkiem__logo a {
-	display:inline-block;
-	padding-right: 100px;
-	padding-top: -20px;
+	display:flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	margin-right: 150px;
 }
 
 .thanhtimkiem__logo img{
+	padding: 10px;
 	width: 130px;
 	border-radius: 50%;
-	padding-top: 7px;
 }
 
-.thanhtimkiem__search {
-	padding-top: 40px;
+.thanhtimkiem__search{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;	
 }
 
 .thanhtimkiem__search__form {
+	
 	width: 500px;
 	height: 50px;
 	border: 1px solid rgb(150, 144, 144);
 	position:relative;
-	float: left;
 	border-radius: 30px;
 	background-color:#f5f5f5;
+	
 }
 
 .thanhtimkiem__search__form form .thanhtimkiem__search__theloai {
+	position:relative;
 	width: 23%;
 	height: 35px;
-	float: left;
 	font-size: 16px;
 	color: #1c1c1c;
 	font-weight: 700;
 	padding-left: 10px;
 	padding-top: 5px;
 	margin-top: 6px;
-	position: relative;
 	border-top-left-radius: 22px;
 	border-bottom-left-radius: 22px;
 	border-right: #6f6f6f solid 1px;
@@ -436,9 +442,13 @@ a:focus {
 	width: 67%;
 	height: 48px;
 	font-size: 16px;
-	color: #b2b2b2;
+	color: black;
+	margin-top: 0px;
 	padding : 10px 15px;
 	background-color: #f5f5f5;
+	position: absolute;
+	top: 0px;
+	left: 23%;
 }
 
 .thanhtimkiem__search__form form input::placeholder {
@@ -454,27 +464,73 @@ a:focus {
 	border-radius: 50%;
 	border: none;
 	background-color:#f5f5f5;
-
 }
 
 .thanhtimkiem__search__form form button:hover{
 	background-color: orangered;
 }
 
-.thanhtimkiem__search__canhan{
-	padding-right: 80px;
-	float: right;
+.thanhtimkiem__search__canhan {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
 }
 
 .thanhtimkiem__search__canhan svg{
 	color:black;
-	width: 25px;
-	height: 25px;
+	width: 40px;
+	height: 40px;
 	background-color: white;
-	text-align: center;
-	float: left;
-	margin-right: 30px;
-	margin-top: 10px;
+	padding: 5px 5px;
 }
 
+.thanhtimkiem__search__canhan svg:hover{
+	background-color: #ff9933;
+	border-radius: 20%;	
+}
+
+ @media screen and (max-width: 768px){
+	.thanhtimkiem__search{
+		padding-bottom: 10px;
+	}
+	.thanhtimkiem__search__canhan{
+		padding-bottom: 10px;
+	}
+	.thanhtimkiem__search__form form .thanhtimkiem__search__theloai {
+		font-size: 14px;
+	}
+	.thanhtimkiem__search__form form .thanhtimkiem__search__theloai svg{
+		position: absolute;
+		top:23px;
+		left:30px;
+	}
+	.thanhtimkiem__search__form form .thanhtimkiem__search__theloai a{
+		font-size: 11px;
+	}
+	
+	.thanhtimkiem__search__form form .thanhtimkiem__search__theloai a:hover{
+		color: white;
+		font-size: 12px;
+	}
+	.thanhtimkiem__search__form form input{
+		width: 63%;
+	}
+} 
+
+@media screen and (max-width: 992px){
+	.thanhtimkiem__search{
+		padding-bottom: 10px;
+	}
+	.thanhtimkiem__search__canhan{
+		padding-bottom: 10px;
+	}
+} 
+
+@media only screen and (min-width: 1200px) {
+	.container-srch {
+		max-width: 1170px;
+	}
+}
 /* end tim kiem */

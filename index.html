@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="styles/main.css">
     <title>Web Sách</title>
 </head>
 
@@ -96,12 +96,13 @@
                         <li><a href="#">Liên hệ</a></li>
                         <!--login-->
                         <!--start-->
-                        <button class="btn btn-secondary" onclick="document.getElementById('id01').style.display='block'">Đăng nhập</button>
-                        
+                        <button class="btn btn-secondary"
+                            onclick="document.getElementById('id01').style.display='block'">Đăng nhập</button>
+
                         <!--form-->
                         <div id="id01" class="modal">
-                            <span onclick="document.getElementById('id01').style.display='none'"
-                            class="close" title="Close Modal">&times;</span>
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                title="Close Modal">&times;</span>
 
                             <!--content-->
                                 <form class="modal-content animate" action="/img/gia_huy.jpg">
@@ -128,15 +129,41 @@
                                       </div>
                                 </form>
                                 <!--end form-->
+                            <form class="modal-content animate" action="/img/gia_huy.jpg">
+                                <div class="imgcontainer">
+                                    <img src="/img/gia_huy.jpg" alt="Avatar" class="avatar">
+                                </div>
+
+                                <div class="container">
+                                    <label for="uname"><b>Tài khoản</b></label>
+                                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                    <label for="psw"><b>Mật khẩu</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                    <button id="login" type="submit" class="btn btn-primary">Đăng nhập</button>
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember"> Lưu mật khẩu
+                                    </label>
+                                </div>
+
+                                <div class="container" style="background-color:#f1f1f1">
+                                    <button class="btn btn-primary" type="button"
+                                        onclick="document.getElementById('id01').style.display='none'"
+                                        class="cancelbtn">Cút</button>
+                                    <span class="psw"><a href="#">Quên mật khẩu</a></span>
+                                </div>
+                            </form>
+                            <!--end form-->
                         </div>
                         <script>
                             var modal = document.getElementById('id01');
-                            window.onclick = function(event) {
-                              if (event.target == modal) {
-                                modal.style.display = "none";
-                              }
+                            window.onclick = function (event) {
+                                if (event.target == modal) {
+                                    modal.style.display = "none";
+                                }
                             }
-                            </script>
+                        </script>
                         <!--end-->
                     </ul>
                 </nav>
@@ -154,13 +181,13 @@
     <section class="thanhtimkiem">
         <div class="container-srch">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-2 col-12">
                     <div class="thanhtimkiem__logo">
                         <a href="./index.html">
-                            <img width="100px" src="/img/409209477_1739548446548992_2017247361086327378_n.jpg" alt=""></a>
+                            <img width="100px" src="img/gia_huy.jpg" alt=""></a>
                     </div>
                 </div>
-                <div class="col-lg-9">
+                <div class="col-lg-7 col-9">
                     <div class="thanhtimkiem__search">
                         <div class="thanhtimkiem__search__form">
                             <form action="#">
@@ -184,30 +211,40 @@
                                 </div>
                                 <input type="text" placeholder="Bạn cần sách gì?">
                                 <button type="submit" class="site-btn">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-search" viewBox="0 0 16 16">
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                         <path
                                             d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
                                     </svg>
                                 </button>
                             </form>
                         </div>
-                        <div class="thanhtimkiem__search__canhan">
-                            <a href="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
-                                  </svg>
-                            </a>
-                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-heart" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
-                                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
-                              </svg></a>
-                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-ul" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
-                              </svg></a>
-                        </div>
                     </div>
                 </div>
+                <div class="col-lg-3 col-3">
+                    <div class="thanhtimkiem__search__canhan">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                            </svg>
+                        </a>
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-bookmark-heart" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z" />
+                                <path
+                                    d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z" />
+                            </svg></a>
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-list-ul" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                            </svg></a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
