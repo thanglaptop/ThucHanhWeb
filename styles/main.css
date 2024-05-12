@@ -488,6 +488,7 @@ a:focus {
 
 .thanhtimkiem__search__form form button:hover{
 	background-color: orangered;
+	font-size: 32px;
 }
 
 .thanhtimkiem__search__canhan {
@@ -513,10 +514,7 @@ a:focus {
 .thanhtimkiem__search .icon{
 	display: none;
 	color:black;
-	width: 100%;
-	height: 100%;
 }
-
 
 .container_srch{
 	width: 100%;
@@ -525,24 +523,80 @@ a:focus {
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
 }
+
+
+
  @media screen and (max-width: 475px){
 	.container_srch{
 		max-width: 475px;
+		height: 190px;
+	}
+	@keyframes hiensearch {
+		from{ opacity: 0; transform: rotate(-180deg);}
+		to{ opacity: 1;}
+	}
+	@keyframes dongsearch {
+		from{ opacity: 1;}
+		to{ opacity: 0;}
+	}
+	@keyframes hieninput {
+		from{display: none; transform: translateX(-367px);}
+		to{transform: translateX(0);}
+	}
+	@keyframes donginput {
+		from{display: block; transform: translateX(0);}
+		to{ transform: translateX(-367px);}
+	}
+	@keyframes hienclose {
+		from{display: none; transform: translateX(-367px);}
+		to{ transform: translateX(0);  }
+	}
+	@keyframes dongclose {
+		from{ display: flex; transform: translateX(0px);}
+		to{transform: translateX(-367px);  }
 	}
 	.thanhtimkiem__search__form{
-		display: none;
+		display:none;
+		animation-name: donginput;
+			animation-duration: 0.5s;
 	}
-	.thanhtimkiem__search .icon{
+	.thanhtimkiem__search .icon {
 		display: flex;
 		align-items: center;
+		justify-content: center;
 		font-size: 30px;
+	}
+	.thanhtimkiem__search .icon i:hover{
+		background-color:orange;
+		border-radius: 20%;
+		font-size: 33px;
+	}
+	.thanhtimkiem__search .icon .item1{
+		display:flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		left: 4px;
+		width: 40px;
+		height: 40px;
+		animation-name: hiensearch;
+		animation-duration: 1s;
 	}
 	.thanhtimkiem__search .icon .item2{
 		display: none;
+		animation-name: dongclose;
+		animation-duration: 0.65s;
 	}
 
 	.thanhtimkiem__search.responsive .thanhtimkiem__search__form {
-			display: block;		
+			display: block;
+			animation-name: hieninput;
+			animation-duration: 0.5s;
+			animation-timing-function: ease-in;
+			animation-delay: 0s;
+			animation-direction: normal;
+			animation-fill-mode: forwards;
+			
 	}
 	.thanhtimkiem__search__theloai{
 		display: none;
@@ -550,13 +604,20 @@ a:focus {
 	.thanhtimkiem__search.responsive .icon{
 		display: flex;
 		justify-content: flex-end;
-		width: 40px;
 	}
 	.thanhtimkiem__search.responsive .icon .item1{
 		display: none;
+		animation-name: dongsearch;
+		animation-duration: 0.3s;
 	}
 	.thanhtimkiem__search.responsive .icon .item2{
-		display: block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 40px;
+		height: 40px;
+		animation-name: hienclose;
+		animation-duration: 0.65s;
 	}
 	.thanhtimkiem__search.responsive .thanhtimkiem__search__form form input{
 		border-top-left-radius: 30px;
@@ -566,12 +627,12 @@ a:focus {
 		width: 85%;
 	}
 	.thanhtimkiem__search__canhan a:last-child{
+		position: relative;
+		top: 3px;
 		width: 100%;
-		height: 100%;
+		height: 100% ;
 		display: flex;
-		align-items: center;
-		justify-content: flex-end;
-
+		justify-content: center;
 	}
 	.thanhtimkiem__search__canhan a:not(:last-child){
 		display: none;
