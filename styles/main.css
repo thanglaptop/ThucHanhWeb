@@ -1,6 +1,6 @@
 /* header */
 .header__top {
-	background: #fae9d0;
+	background: #dfb16d;
 }
 .header__top__left {
 	padding: 8px 0;
@@ -1105,7 +1105,7 @@ body{
   background-color: #3a3939;
 }
 .footer-content {
-  background-color: black;
+  background-color: #dfb16d;
   padding: 100px 40px 40px;
   width: 100%;
   display: flex;
