@@ -200,25 +200,11 @@
                 </div>
                 <div class="col-lg-3 col-2 col-sm-3 col-md-3">
                     <div class="thanhtimkiem__search__canhan">
-                        <a href="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-person" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
-                            </svg>
-                        </a>
-                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-bookmark-heart" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z" />
-                                <path
-                                    d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z" />
-                            </svg></a>
-                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-list-ul" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
-                            </svg></a>
+                        <div>
+                        <a href=""><i class="ri-user-line"></i></a>
+                        <a href=""><i class="ri-bookmark-3-line"></i></a>
+                        <a href=""><i class="ri-list-unordered"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -230,17 +216,17 @@
         <!--hinh`-->
         <div class="mySlides f">
             <div class="numbertext">1 / 3</div>
-                <img src="img/Banner-1.jpg" style="width: 100%;">
+            <img src="img/Banner-1.jpg" style="width: 100%;">
         </div>
         <!--hinh`-->
         <div class="mySlides f">
-            <div class="numbertext">2 / 3</div>    
-                <img src="img/Banner-2.png" style="width: 100%;">
+            <div class="numbertext">2 / 3</div>
+            <img src="img/Banner-2.png" style="width: 100%;">
         </div>
         <!--hinh`-->
         <div class="mySlides f">
             <div class="numbertext">3 / 3</div>
-                <img src="img/Banner-3.png" style="width: 100%;">
+            <img src="img/Banner-3.png" style="width: 100%;">
         </div>
         <!--Chuyen qua chuye lai-->
         <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -290,44 +276,62 @@
     <!--end-->
 
     <!-- start hướng dẫn thành viên  -->
+    <hr>
     <section class="huongdanthanhvien">
         <div class="container_huongdan">
             <div class="row">
-                <div class="col-lg-6 huongdan">
-                    <h5>Hướng dẫn thành viên</h5>
-                    <ul>
-                        <li>
-                            <div>#1. Yêu cầu trả sách</div>
-                            <div>Bạn có thể trả sách để thuê quyển mới hoặc tạm dừng dịch vụ</div>
-                            <a href="#">Quản lý sách</a>
-                        </li>
-                        <li>
-                            <div>#2. Thuê sách mới</div>
-                            <div>Bạn có thể trả sách để thuê quyển mới hoặc tạm dừng dịch vụ</div>
-                            <a href="#">Ghé thăm tủ sách</a>
-                        </li>
-                        <li>
-                            <div>#3. Đăng ký gói thuê</div>
-                            <div>Bạn có thể trả sách để thuê quyển mới hoặc tạm dừng dịch vụ</div>
-                            <a href="#">Nạp ngày thuê</a>
-                        </li>
-                    </ul>
+                <div class="col-lg-6 col-md-6" style="padding-bottom: 1.5rem;">
+                    <div class="huongdan">
+                        <h5>Hướng dẫn thành viên</h5>
+                        <ul>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-12 contenthuongdan">
+                                    <li>
+                                        <div>#1. Yêu cầu trả sách</div>
+                                        <div>Bạn có thể trả sách để thuê quyển mới hoặc tạm dừng dịch vụ</div>
+                                        <a href="#">Quản lý sách <i class="ri-links-line"></i></a>
+                                    </li>
+                                </div>
+                                <div class="col-lg-4 col-md-12 contenthuongdan">
+                                    <li>
+                                        <div>#2. Thuê sách mới</div>
+                                        <div>Bạn có thể trả sách để thuê quyển mới hoặc tạm dừng dịch vụ</div>
+                                        <a href="#">Ghé thăm tủ sách <i class="ri-links-line"></i></a>
+                                    </li>
+                                </div>
+                                <div class="col-lg-4 col-md-12 contenthuongdan">
+                                    <li>
+                                        <div>#3. Đăng ký gói thuê</div>
+                                        <div>Bạn có thể trả sách để thuê quyển mới hoặc tạm dừng dịch vụ</div>
+                                        <a href="#">Nạp ngày thuê <i class="ri-links-line"></i></a>
+                                    </li>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-lg-1" style="height: 2rem; width: 4rem"></div>
-                <div class="col-lg-5 huongdan">
-                    <h5>Hướng dẫn khách hàng mới</h5>
-                    <ul>
-                        <li>
-                            <div>#1. Yêu cầu trả sách</div>
-                            <div>Bạn có thể trả sách để thuê quyển mới hoặc tạm dừng dịch vụ</div>
-                            <a href="#">Quản lý sách</a>
-                        </li>
-                        <li>
-                            <div>#2. Thuê sách mới</div>
-                            <div>Bạn có thể trả sách để thuê quyển mới hoặc tạm dừng dịch vụ</div>
-                            <a href="#">Ghé thăm tủ sách</a>
-                        </li>
-                    </ul>
+                <div class="col-lg-6 col-md-6">
+                    <div class="huongdan">
+                        <h5>Hướng dẫn khách hàng mới</h5>
+                        <ul>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12 contenthuongdan">
+                                    <li>
+                                        <div>#1. Yêu cầu trả sách</div>
+                                        <div>Bạn có thể trả sách để thuê quyển mới hoặc tạm dừng dịch vụ</div>
+                                        <a href="#">Quản lý sách <i class="ri-links-line"></i></a>
+                                    </li>
+                                </div>
+                                <div class="col-lg-6 col-md-12 contenthuongdan">
+                                    <li>
+                                        <div>#2. Thuê sách mới</div>
+                                        <div>Bạn có thể trả sách để thuê quyển mới hoặc tạm dừng dịch vụ</div>
+                                        <a href="#">Ghé thăm tủ sách <i class="ri-links-line"></i></a>
+                                    </li>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -335,94 +339,100 @@
     <!-- end hướng dẫn thành viên  -->
 
     <!-- start sách -->
+    <hr>
     <section class="tusach">
         <div class="container_sach">
             <div class="row">
                 <div class="col-lg-12">
+                    <h3><i class="ri-book-open-fill"> Tủ Sách</i></h3>
                     <div class="row">
-                        <div class="col-lg-3 sach">
+                        <div class="col-lg-3 col-md-4 col-sm-6 sach">
                             <div class="gapsach">
                                 <a href="#">
                                     <img src="img/gia_huy.jpg" alt="">
                                     <h5>Cây Cam Ngọt Của Gia Huy</h5>
                                 </a>
-                                <button type="submit" class="btnyeuthich">yêu thích</button>
-                                <button type="submit" class="btnthue">thuê</button>
+                                <button type="submit" class="btnyeuthich"><i class="ri-heart-line"></i> yêu
+                                    thích</button>
+                                <button type="submit" class="btnthue"><i class="ri-add-line"></i> thuê</button>
                             </div>
                         </div>
-                        <div class="col-lg-3 sach">
+                        <div class="col-lg-3 col-md-4 col-sm-6 sach">
                             <div class="gapsach">
                                 <a href="#">
                                     <img src="img/book/caycamngotcuatoi.png" alt="">
                                     <h5>Cây Cam Ngọt Của Tôi</h5>
                                 </a>
-                                <button type="submit" class="btnyeuthich">yêu thích</button>
-                                <button type="submit" class="btnthue">thuê</button>
+                                <button type="submit" class="btnyeuthich"><i class="ri-heart-line"></i> yêu
+                                    thích</button>
+                                <button type="submit" class="btnthue"><i class="ri-add-line"></i> thuê</button>
                             </div>
                         </div>
-                        <div class="col-lg-3 sach">
+                        <div class="col-lg-3 col-md-4 col-sm-6 sach">
                             <div class="gapsach">
                                 <a href="#">
                                     <img src="img/book/cho-toi-xin-mot-ve-di-tuoi-tho.png" alt="">
                                     <h5>Cho Tôi Xin Một Vé Đi Tuổi Thơ</h5>
                                 </a>
-                                <button type="submit" class="btnyeuthich">yêu thích</button>
-                                <button type="submit" class="btnthue">thuê</button>
+                                <button type="submit" class="btnyeuthich"><i class="ri-heart-line"></i> yêu
+                                    thích</button>
+                                <button type="submit" class="btnthue"><i class="ri-add-line"></i> thuê</button>
                             </div>
                         </div>
-                        <div class="col-lg-3 sach">
+                        <div class="col-lg-3 col-md-4 col-sm-6 sach">
                             <div class="gapsach">
                                 <a href="#">
                                     <img src="img/book/Kafka_bên_bờ_biển.png" alt="">
                                     <h5>Kafka Bên Bờ Biển</h5>
-                                    <h5></h5>
                                 </a>
-                                <button type="submit" class="btnyeuthich">yêu thích</button>
-                                <button type="submit" class="btnthue">thuê</button>
+                                <button type="submit" class="btnyeuthich"><i class="ri-heart-line"></i> yêu
+                                    thích</button>
+                                <button type="submit" class="btnthue"><i class="ri-add-line"></i> thuê</button>
                             </div>
                         </div>
-                        <div class="col-lg-3 sach">
+                        <div class="col-lg-3 col-md-4 col-sm-6 sach">
                             <div class="gapsach">
                                 <a href="#">
                                     <img src="img/book/onepiece.png" alt="">
                                     <h5>One Piece</h5>
-                                    <h5></h5>
                                 </a>
-                                <button type="submit" class="btnyeuthich">yêu thích</button>
-                                <button type="submit" class="btnthue">thuê</button>
+                                <button type="submit" class="btnyeuthich"><i class="ri-heart-line"></i> yêu
+                                    thích</button>
+                                <button type="submit" class="btnthue"><i class="ri-add-line"></i> thuê</button>
                             </div>
                         </div>
-                        <div class="col-lg-3 sach">
+                        <div class="col-lg-3 col-md-4 col-sm-6 sach">
                             <div class="gapsach">
                                 <a href="#">
                                     <img src="img/book/genius_left_crazy_right.png" alt="">
                                     <h5>Thiên Tài Bên Trái, Kẻ Điên Bên Phải</h5>
                                 </a>
-                                <button type="submit" class="btnyeuthich">yêu thích</button>
-                                <button type="submit" class="btnthue">thuê</button>
+                                <button type="submit" class="btnyeuthich"><i class="ri-heart-line"></i> yêu
+                                    thích</button>
+                                <button type="submit" class="btnthue"><i class="ri-add-line"></i> thuê</button>
                             </div>
                         </div>
 
-                        <div class="col-lg-3 sach">
+                        <div class="col-lg-3 col-md-4 col-sm-6 sach">
                             <div class="gapsach">
                                 <a href="#">
                                     <img src="img/book/nhatkytrongtu.png" alt="">
                                     <h5>Nhật Ký Trong Tù</h5>
-                                    <h5></h5>
                                 </a>
-                                <button type="submit" class="btnyeuthich">yêu thích</button>
-                                <button type="submit" class="btnthue">thuê</button>
+                                <button type="submit" class="btnyeuthich"><i class="ri-heart-line"></i> yêu
+                                    thích</button>
+                                <button type="submit" class="btnthue"><i class="ri-add-line"></i> thuê</button>
                             </div>
                         </div>
-                        <div class="col-lg-3 sach">
+                        <div class="col-lg-3 col-md-4 col-sm-6 sach">
                             <div class="gapsach">
                                 <a href="#">
                                     <img src="img/book/thutoi.png" alt="">
                                     <h5>Thú Tội</h5>
-                                    <h5></h5>
                                 </a>
-                                <button type="submit" class="btnyeuthich">yêu thích</button>
-                                <button type="submit" class="btnthue">thuê</button>
+                                <button type="submit" class="btnyeuthich"><i class="ri-heart-line"></i> yêu
+                                    thích</button>
+                                <button type="submit" class="btnthue"><i class="ri-add-line"></i> thuê</button>
                             </div>
                         </div>
                     </div>
@@ -431,6 +441,7 @@
         </div>
     </section>
     <!-- end sách -->
+    <hr>
     <h1 class="title_card">Sách vip pro</h1>
     <br>
     <div class="cards">
