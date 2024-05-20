@@ -1330,7 +1330,8 @@ body {
 	border-radius: 15px;
 	width: fit-content;
 	max-height: 510px;
-	padding: 2rem 3rem 0 3rem;
+	padding: 2rem 3rem 0 2rem;
+	margin-bottom: 2rem;
 }
 
 .hinh {
@@ -1517,7 +1518,7 @@ body {
 	border: none;
 	margin-top: 1rem;
 	border-bottom: 1px solid rgb(145, 142, 142);
-	width: 350px;
+	max-width: 350px;
 	height: 50px;
 	background-color: none;
 	border-radius: 10px;
@@ -1533,7 +1534,7 @@ body {
 	border: none;
 	border-bottom: 1px solid rgb(145, 142, 142);
 	border-radius: 10px;
-	width: 350px;
+	max-width: 350px;
 	height: 100px;
 }
 .sendemail form button{
@@ -1550,12 +1551,30 @@ body {
 .hinh2{
 	position: absolute;
 	top: 27rem;
-	right: -8rem;
+	right: -10rem;
 }
 .hinh1{
 	position: absolute;
 	top: 27rem;
-	left: -8rem;
+	left: -10rem;
 }
-
+.hinh3{
+	width: 500px;
+	margin-top: -2rem;
+}
+@media only screen and (max-width: 1350px) {
+	.hinh1, .hinh2{
+		display: none;
+	}
+}
+@media only screen and (max-width: 550px) {
+	.hinh3{
+		max-width: 300px;
+	}
+	.content_lienhe{
+		display: flex;
+		flex-direction: column;
+		margin-left: 1rem;
+	}
+}
 /* end section liên hệ */
