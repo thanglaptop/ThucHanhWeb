@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Web Sách</title>
 </head>
-
 <body>
     <!-- phần header -->
     <header class="header">
@@ -102,43 +101,9 @@
                         <!--login-->
                         <!--start-->
                         <button class="btn btn-secondary"
-                            onclick="document.getElementById('id01').style.display='block'">Đăng nhập</button>
+                        onclick="document.location='login_form.html'">Đăng nhập</button>
 
-                        <!--form-->
-                        <div id="id01" class="modal">
-                            <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                                title="Close Modal">&times;</span>
-
-                            <!--content-->
-                            <form class="modal-content animate" action="img/gia_huy.jpg">
-                                <div class="container-lg">
-                                    <img src="img/za huy tre tui.jpg" alt="Avatar" class="avatar">
-                                </div>
-
-                                <div class="container-frm">
-                                    <label for="uname"><b>Tài khoản</b></label>
-                                    <input type="text" placeholder="Enter Username" name="uname" required class="user">
-
-                                    <label for="psw"><b>Mật khẩu</b></label>
-                                    <input type="password" placeholder="Enter Password" name="psw" required
-                                        class="pass">
-
-                                    <button id="login" type="submit" class="btn btn-primary">Đăng nhập</button>
-                                    <label>
-                                        <input type="checkbox" checked="checked" name="remember"> Lưu mật khẩu
-                                    </label>
-                                </div>
-
-                                <div class="container-qm" style="background-color:#f1f1f1">
-                                    <button class="btn btn-primary" type="button"
-                                        onclick="document.getElementById('id01').style.display='none'"
-                                        class="cancelbtn">Cút</button>
-                                    <span class="psw"><a href="#">Quên mật khẩu</a></span>
-                                </div>
-                            </form>
-                            <!--end form-->
-
-                            <!--end-->
+                        <!--end-->
                     </ul>
                 </nav>
             </div>
@@ -347,76 +312,73 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h3><i class="ri-book-open-fill"> Tủ Sách</i></h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="cangiuasach">
-                    <div class="col-lg-3 col-md-4 col-sm-6 sach">
-                        <div class="gapsach">
-                            <a href="#">
-                                <img src="img/gia_huy.jpg" alt="">
-                                <h5>Cây Cam Ngọt Của Gia Huy</h5>
-                            </a>
-                            <button type="submit" class="btnyeuthich"><i class="ri-heart-line"></i> yêu
-                                thích</button>
-                            <button type="submit" class="btnthue"><i class="ri-add-line"></i> thuê</button>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-6 sach">
+                            <div class="gapsach">
+                                <a href="#">
+                                    <img src="img/gia_huy.jpg" alt="" onclick="document.location='sanpham.html'">
+                                    <h5>Cây Cam Ngọt Của Gia Huy</h5>
+                                </a>
+                                <button type="submit" class="btnyeuthich"><i class="ri-heart-line"></i> yêu
+                                    thích</button>
+                                <button type="submit" class="btnthue"><i class="ri-add-line"></i onclick="document.location='sanpham.html'"> thuê</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 sach">
-                        <div class="gapsach">
-                            <a href="#">
-                                <img src="img/book/caycamngotcuatoi.png" alt="">
-                                <h5>Cây Cam Ngọt Của Tôi</h5>
-                            </a>
-                            <button type="submit" class="btnyeuthich"><i class="ri-heart-line"></i> yêu
-                                thích</button>
-                            <button type="submit" class="btnthue"><i class="ri-add-line"></i> thuê</button>
+                        <div class="col-lg-3 col-md-4 col-sm-6 sach">
+                            <div class="gapsach">
+                                <a href="#">
+                                    <img src="img/book/caycamngotcuatoi.png" alt="">
+                                    <h5>Cây Cam Ngọt Của Tôi</h5>
+                                </a>
+                                <button type="submit" class="btnyeuthich"><i class="ri-heart-line"></i> yêu
+                                    thích</button>
+                                <button type="submit" class="btnthue"><i class="ri-add-line"></i> thuê</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 sach">
-                        <div class="gapsach">
-                            <a href="#">
-                                <img src="img/book/cho-toi-xin-mot-ve-di-tuoi-tho.png" alt="">
-                                <h5>Cho Tôi Xin Một Vé Đi Tuổi Thơ</h5>
-                            </a>
-                            <button type="submit" class="btnyeuthich"><i class="ri-heart-line"></i> yêu
-                                thích</button>
-                            <button type="submit" class="btnthue"><i class="ri-add-line"></i> thuê</button>
+                        <div class="col-lg-3 col-md-4 col-sm-6 sach">
+                            <div class="gapsach">
+                                <a href="#">
+                                    <img src="img/book/cho-toi-xin-mot-ve-di-tuoi-tho.png" alt="">
+                                    <h5>Cho Tôi Xin Một Vé Đi Tuổi Thơ</h5>
+                                </a>
+                                <button type="submit" class="btnyeuthich"><i class="ri-heart-line"></i> yêu
+                                    thích</button>
+                                <button type="submit" class="btnthue"><i class="ri-add-line"></i> thuê</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 sach">
-                        <div class="gapsach">
-                            <a href="#">
-                                <img src="img/book/Kafka_bên_bờ_biển.png" alt="">
-                                <h5>Kafka Bên Bờ Biển</h5>
-                            </a>
-                            <button type="submit" class="btnyeuthich"><i class="ri-heart-line"></i> yêu
-                                thích</button>
-                            <button type="submit" class="btnthue"><i class="ri-add-line"></i> thuê</button>
+                        <div class="col-lg-3 col-md-4 col-sm-6 sach">
+                            <div class="gapsach">
+                                <a href="#">
+                                    <img src="img/book/Kafka_bên_bờ_biển.png" alt="">
+                                    <h5>Kafka Bên Bờ Biển</h5>
+                                </a>
+                                <button type="submit" class="btnyeuthich"><i class="ri-heart-line"></i> yêu
+                                    thích</button>
+                                <button type="submit" class="btnthue"><i class="ri-add-line"></i> thuê</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 sach">
-                        <div class="gapsach">
-                            <a href="#">
-                                <img src="img/book/onepiece.png" alt="">
-                                <h5>One Piece</h5>
-                            </a>
-                            <button type="submit" class="btnyeuthich"><i class="ri-heart-line"></i> yêu
-                                thích</button>
-                            <button type="submit" class="btnthue"><i class="ri-add-line"></i> thuê</button>
+                        <div class="col-lg-3 col-md-4 col-sm-6 sach">
+                            <div class="gapsach">
+                                <a href="#">
+                                    <img src="img/book/onepiece.png" alt="">
+                                    <h5>One Piece</h5>
+                                </a>
+                                <button type="submit" class="btnyeuthich"><i class="ri-heart-line"></i> yêu
+                                    thích</button>
+                                <button type="submit" class="btnthue"><i class="ri-add-line"></i> thuê</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 sach">
-                        <div class="gapsach">
-                            <a href="#">
-                                <img src="img/book/genius_left_crazy_right.png" alt="">
-                                <h5>Thiên Tài Bên Trái, Kẻ Điên Bên Phải</h5>
-                            </a>
-                            <button type="submit" class="btnyeuthich"><i class="ri-heart-line"></i> yêu
-                                thích</button>
-                            <button type="submit" class="btnthue"><i class="ri-add-line"></i> thuê</button>
+                        <div class="col-lg-3 col-md-4 col-sm-6 sach">
+                            <div class="gapsach">
+                                <a href="#">
+                                    <img src="img/book/genius_left_crazy_right.png" alt="">
+                                    <h5>Thiên Tài Bên Trái, Kẻ Điên Bên Phải</h5>
+                                </a>
+                                <button type="submit" class="btnyeuthich"><i class="ri-heart-line"></i> yêu
+                                    thích</button>
+                                <button type="submit" class="btnthue"><i class="ri-add-line"></i> thuê</button>
+                            </div>
                         </div>
-                    </div>
 
                     <div class="col-lg-3 col-md-4 col-sm-6 sach">
                         <div class="gapsach">
