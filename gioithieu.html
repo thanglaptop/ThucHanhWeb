@@ -9,9 +9,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <!-- <link rel="stylesheet" href="styles/bootstrap.min.css" type="text/css"> -->
     <link rel="stylesheet" href="styles/main.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
     <!--star-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -212,73 +212,40 @@
             </div>
         </div>
     </section>
-    <!-- ket thuc tim kiem section -->
-    <!-- bat dau slide show -->
-    <div class="slideshow-container">
-        <!--hinh`-->
-        <div class="mySlides f">
-            <div class="numbertext">1 / 3</div>
-            <img src="img/Banner-1.jpg" style="width: 100%;">
+
+    <section>
+        <div class="container_gioithieu">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Giới thiệu Thư Viện Thục Hán</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="content_gioithieu">
+                        <h2>Đọc được nhiều sách hơn và đọc tốt hơn với Thư Viện Thục Hán</h2>
+                        <br>
+                        <div>Bạn thích đọc sách giấy nhưng vẫn còn gặp phải nhiều khó khăn: không biết nên chọn tựa sách
+                            nào, mua ở đâu, sách có phải sách thật hay không, giá cả thế nào, bảo quản ra sao hoặc nếu
+                            không có nhu cầu đọc nữa thì bán lại cho ai?</div>
+                        <br>
+                        <div>Libri giải quyết các vấn đề trên bằng cách cung cấp cho bạn 1 thư viện thuê ngoài với chi
+                            phí chỉ từ 1,900 VND/ngày</div>
+                        <br>
+                        <div class="hinh">
+                            <img src="img/hinhgioithieu/docsach.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 content_hinh">
+                    <img src="img/logo.png" alt="">
+                    <div class="caption">THƯ VIỆN THỤC HÁN</div>
+                    <div>Thiên thu chiến quốc thống nhất tam quốc</div>
+                </div>
+            </div>
         </div>
-        <!--hinh`-->
-        <div class="mySlides f">
-            <div class="numbertext">2 / 3</div>
-            <img src="img/Banner-2.png" style="width: 100%;">
-        </div>
-        <!--hinh`-->
-        <div class="mySlides f">
-            <div class="numbertext">3 / 3</div>
-            <img src="img/Banner-3.png" style="width: 100%;">
-        </div>
-        <!--Chuyen qua chuye lai-->
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-    </div>
-    <br>
-    <!-- cham -->
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-    <!--js-->
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
+    </section>
 
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
-    <!-- end slideshow -->
-    <br>
-    <!--list top sach-->
-    <!--start-->
-    <br>
-    <!--end-->
-
-    <!-- start hướng dẫn thành viên  -->
-    <hr>
     <section class="huongdanthanhvien">
         <div class="container_huongdan">
             <div class="row">
@@ -340,149 +307,75 @@
     </section>
     <!-- end hướng dẫn thành viên  -->
 
-    <!-- start sách -->
-    <hr>
-    <section class="tusach">
-        <div class="container_sach">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3><i class="ri-book-open-fill"> Tủ Sách</i></h3>
+    <!-- start giới thiệu -->
+    <section>
+        <div class="container_gioithieu">
+            <div class="row" style="padding-bottom: 3rem;">
+                <div class="col-lg-5 hinhgioithieu">
+                    <img src="img/hinhgioithieu/khonggioihanthoigian.jpg" alt="">
                 </div>
-            </div>
-            <div class="row">
-                <div class="cangiuasach">
-                    <div class="col-lg-3 col-md-4 col-sm-6 sach">
-                        <div class="gapsach">
-                            <a href="#">
-                                <img src="img/gia_huy.jpg" alt="">
-                                <h5>Cây Cam Ngọt Của Gia Huy</h5>
-                            </a>
-                            <button type="submit" class="btnyeuthich"><i class="ri-heart-line"></i> yêu
-                                thích</button>
-                            <button type="submit" class="btnthue"><i class="ri-add-line"></i> thuê</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 sach">
-                        <div class="gapsach">
-                            <a href="#">
-                                <img src="img/book/caycamngotcuatoi.png" alt="">
-                                <h5>Cây Cam Ngọt Của Tôi</h5>
-                            </a>
-                            <button type="submit" class="btnyeuthich"><i class="ri-heart-line"></i> yêu
-                                thích</button>
-                            <button type="submit" class="btnthue"><i class="ri-add-line"></i> thuê</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 sach">
-                        <div class="gapsach">
-                            <a href="#">
-                                <img src="img/book/cho-toi-xin-mot-ve-di-tuoi-tho.png" alt="">
-                                <h5>Cho Tôi Xin Một Vé Đi Tuổi Thơ</h5>
-                            </a>
-                            <button type="submit" class="btnyeuthich"><i class="ri-heart-line"></i> yêu
-                                thích</button>
-                            <button type="submit" class="btnthue"><i class="ri-add-line"></i> thuê</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 sach">
-                        <div class="gapsach">
-                            <a href="#">
-                                <img src="img/book/Kafka_bên_bờ_biển.png" alt="">
-                                <h5>Kafka Bên Bờ Biển</h5>
-                            </a>
-                            <button type="submit" class="btnyeuthich"><i class="ri-heart-line"></i> yêu
-                                thích</button>
-                            <button type="submit" class="btnthue"><i class="ri-add-line"></i> thuê</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 sach">
-                        <div class="gapsach">
-                            <a href="#">
-                                <img src="img/book/onepiece.png" alt="">
-                                <h5>One Piece</h5>
-                            </a>
-                            <button type="submit" class="btnyeuthich"><i class="ri-heart-line"></i> yêu
-                                thích</button>
-                            <button type="submit" class="btnthue"><i class="ri-add-line"></i> thuê</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 sach">
-                        <div class="gapsach">
-                            <a href="#">
-                                <img src="img/book/genius_left_crazy_right.png" alt="">
-                                <h5>Thiên Tài Bên Trái, Kẻ Điên Bên Phải</h5>
-                            </a>
-                            <button type="submit" class="btnyeuthich"><i class="ri-heart-line"></i> yêu
-                                thích</button>
-                            <button type="submit" class="btnthue"><i class="ri-add-line"></i> thuê</button>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6 sach">
-                        <div class="gapsach">
-                            <a href="#">
-                                <img src="img/book/nhatkytrongtu.png" alt="">
-                                <h5>Nhật Ký Trong Tù</h5>
-                            </a>
-                            <button type="submit" class="btnyeuthich"><i class="ri-heart-line"></i> yêu
-                                thích</button>
-                            <button type="submit" class="btnthue"><i class="ri-add-line"></i> thuê</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 sach">
-                        <div class="gapsach">
-                            <a href="#">
-                                <img src="img/book/thutoi.png" alt="">
-                                <h5>Thú Tội</h5>
-                            </a>
-                            <button type="submit" class="btnyeuthich"><i class="ri-heart-line"></i> yêu
-                                thích</button>
-                            <button type="submit" class="btnthue"><i class="ri-add-line"></i> thuê</button>
-                        </div>
+                <div class="col-lg-7 vangioithieu">
+                    <h1>Đọc Sách Không Giới Hạn</h1>
+                    <div>Thoải mái đọc như sách của bạn: Không giới hạn số ngày giữ sách, không phí phạt chậm trả.
                     </div>
                 </div>
             </div>
-
-
+            <div class="row" style="padding-bottom: 3rem;">
+                <div class="reverse_content">
+                    <div class="col-lg-5 hinhgioithieu">
+                        <img src="img/hinhgioithieu/dockonhingia.jpg" alt="">
+                    </div>
+                    <div class="col-lg-7 vangioithieu">
+                        <h1>Đọc Sách Không Nhìn Giá</h1>
+                        <div>Không phải canh sales, tính giá bán hay giá thuê: phí thành viên tại Libri là cố định và
+                            cực kì
+                            hợp lý.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 hinhgioithieu">
+                    <img src="img/hinhgioithieu/docsachchatluong.jpg" alt="">
+                </div>
+                <div class="col-lg-7 vangioithieu">
+                    <h1>Đọc Sách Chất Lượng</h1>
+                    <div>Tủ sách hàng tuyển: Thư Viện Thục Hán chọn lựa rất kỹ tựa sách khi nhập về, bạn hoàn toàn có
+                        thể tin tưởng vào chất lượng kiến thức nạp vào.</div>
+                </div>
+            </div>
         </div>
     </section>
-    <!-- end sách -->
-    <hr>
-    <h1 class="title_card">Sách vip pro</h1>
-    <br>
-    <div class="cards">
-        <div class="card"><img src="img/nhung-bai-hov-cuoc-song_600x926.jpg" alt="random image from picusm" />
-            <h3>Đắc nhân tâm</h3>
-            <div class="actions">
-                <button>Thuê</button>
-                Tác giả: Buồi dái
+    <!-- end giới thiệu -->
+    <!-- khách hàng chia sẻ -->
+    <section>
+        <div class="row">
+            <div class="container_gioithieu">
+                <div class="chiasekhachhang">
+                    <h2>Bạn đọc nói gì về Thư Viện Thục Hán?</h2>
+                    <img src="img/gia_huy.jpg" alt="">
+                    <div>Thường mình hay di chuyển nhiều vì công việc nên không muốn mua sách quá nhiều, mỗi lần
+                        dịch chuyển rất mất công. Mình thích đọc e-book, thật may khi tìm được Thư Viện Thục Hán
+                        có rất nhiều sách hợp gu mình mà giá đăng ký gói thuê để đọc lại cực kỳ hạt dẻ. Dịch vụ
+                        thuê sách của Thư Viện Thục Hán vừa giúp mình đọc sách mọi lúc mọi nơi với thiết bị điện tử,
+                        rất tiện lợi và phù hợp với phong cách sống của mình. Mãi yêu Thư Viện Thục Hán!
+                    </div>
+                    <h5>Anh Gia Huy</h5>
+                </div>
             </div>
         </div>
-        <div class="card"><img src="img/7-thoi-quen-de-thanh-dat_600x856.jpg" alt="random image from picusm" />
-            <h3>Title 2</h3>
-            <div class="actions">
-                <button>Thuê</button>
-                Tác giả: Buồi dái
-            </div>
-        </div>
-        <div class="card"><img src="img/dam-nghi-lon_600x890.jpg" alt="random image from picusm" />
-            <h3>Long Title 3: forcing a multi line</h3>
-            <div class="actions">
-                <button>Thuê</button>
-                Tác giả: Buồi dái
-            </div>
-        </div>
-        <div class="card"><img src="img/sach-doc-vi-bat-ky-ai_600x960.gif" alt="random image from picusm" />
-            <h3>Title 4</h3>
-            <div class="actions">
-                <button>Thuê</button>
-                Tác giả: Buồi dái
-            </div>
-        </div>
+    </section>
+    <!-- end khách hàng chia sẻ -->
 
-    </div>
-    </div>
-    <!--end-->
+    <section>
+        <div class="row">
+            <div class="container_gioithieu">
+                <div class="dieuhuong">
+                    <a href=""><div class="nut">Tham Gia Ngay</div></a>
+                    <a href=""><div class="nut">Khám Phá Tủ Sách</div></a>
+                </div>
+            </div>
+        </div>
+    </section>
     <br>
 
     <!--footer-->
