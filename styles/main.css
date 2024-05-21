@@ -7,35 +7,38 @@
 	padding: 8px 0;
 }
 
-.header__top__left ul li {
-	font-size: 14px;
-	color: black;
+.header__top__left {
+	font-size: 16px;
+	color: rgb(92, 56, 15);
 	display: inline-block;
 	margin-right: 45px;
-	position: relative;
 }
 
 .header__top__right {
 	text-align: right;
 	padding: 10px 0 13px;
+
 }
 
 .header__top__right__social {
-	position: relative;
 	display: inline-block;
 	margin-right: 35px;
 }
 
 .header__top__right__social a {
-	font-size: 14px;
-	color: black;
+	display: inline-block;
+	font-size: 20px;
+	color: rgb(92, 56, 15);
 	margin-right: 20px;
+	transition-property: transform;
+	transition-duration: 0.3s;
+	transition-timing-function: ease;
+	transition-delay: 0s;
 }
 
-.header__top__right__social a svg:hover {
-	width: 18px;
-	height: 18px;
-	color: rebeccapurple;
+.header__top__right__social a:hover {
+	color: rgb(172, 92, 0);
+	transform: translateY(-3px);
 }
 
 .header__top__right__language {
@@ -52,32 +55,26 @@
 }
 
 .header__top__right__language div {
-	font-size: 14px;
-	color: black;
-	display: inline-block;
+	font-size: 16px;
+	color: rgb(92, 56, 15);
 	margin-right: 4px;
+	
 }
 
 .header__top__right__language:hover div {
-	font-size: 16px;
-	color: rebeccapurple;
-}
-
-.header__top__right__language div+svg {
-	font-size: 14px;
-	color: #1c1c1c;
-	position: relative;
+	color: rgb(172, 92, 0);
 }
 
 .header__top__right__language ul {
-	background: rgb(206, 154, 154);
+	background: rgb(214, 177, 127);
 	width: 100px;
 	text-align: center;
 	padding: 5px 0;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 	position: absolute;
 	left: 0;
 	top: 43px;
-	z-index: 9;
 	opacity: 0;
 	visibility: hidden;
 	-webkit-transition: all, 0.3s;
@@ -91,20 +88,34 @@
 	list-style: none;
 }
 
-.header__top__right__language ul li a {
+.header__top__right__language a {
+	display: block;
 	font-size: 14px;
 	color: #ffffff;
 	padding: 5px 10px;
 	text-decoration: none;
+	transition-property: transform;
+	transition-duration: 0.3s;
+	transition-timing-function: ease;
+	transition-delay: 0s;
 }
+.header__top__right__language li:hover {
+	background-color: rgb(172, 92, 0);
 
-.header__top__right__language ul li a:hover {
-	font-size: 16px;
+}
+.header__top__right__language a:hover {
 	color: black;
+	transform: translateY(-2px);
+
 }
 
 .container-hd {
 	padding: 16px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
 }
 
 /* end header */
@@ -434,12 +445,6 @@ span.psw {
 	color: #c9892ade;
 }
 
-.thanhtimkiem__search__form form .thanhtimkiem__search__theloai svg {
-	position: absolute;
-	right: 9px;
-	top: 11px;
-}
-
 .thanhtimkiem__search__form form .thanhtimkiem__search__theloai ul {
 	background-color: #eed88f;
 	border-bottom-left-radius: 10%;
@@ -461,20 +466,25 @@ span.psw {
 	transition: all, 0.3s;
 }
 
-.thanhtimkiem__search__form form .thanhtimkiem__search__theloai a {
+.thanhtimkiem__search__theloai a {
+	display: block;
 	color: rgb(68, 50, 1);
 	font-size: 14px;
 	font-weight: 400;
 	padding: 5px 10px;
+	transition-property: transform;
+	transition-duration: 0.3s;
+	transition-timing-function: ease;
+	transition-delay: 0s;
 }
 
-.thanhtimkiem__search__form form .thanhtimkiem__search__theloai li:hover {
+.thanhtimkiem__search__theloai li:hover {
 	background-color: #c9892ade;
 }
 
-.thanhtimkiem__search__form form .thanhtimkiem__search__theloai a:hover {
+.thanhtimkiem__search__theloai a:hover {
 	color: white;
-	font-size: 16px;
+	transform: translateY(-2px);
 }
 
 .thanhtimkiem__search__form form input {
@@ -520,17 +530,26 @@ span.psw {
 	align-items: center;
 	justify-content: center;
 	height: 100%;
+	gap: 1rem;
+	
 }
 
 .thanhtimkiem__search__canhan i {
+	display: inline-block;
 	color: #5a3e13de;
 	font-size: 30px;
 	padding: 5px 5px;
+
+	transition-property: transform;
+	transition-duration: 0.3s;
+	transition-timing-function: ease;
+	transition-delay: 0s;
 }
 
 .thanhtimkiem__search__canhan i:hover {
 	background-color: #c9892ade;
 	border-radius: 20%;
+	transform: translateY(-5px);
 }
 
 .thanhtimkiem__search .icon {
@@ -718,12 +737,6 @@ span.psw {
 		font-size: 14px;
 	}
 
-	.thanhtimkiem__search__form form .thanhtimkiem__search__theloai svg {
-		position: absolute;
-		top: 23px;
-		left: 30px;
-	}
-
 	.thanhtimkiem__search__form form .thanhtimkiem__search__theloai a {
 		font-size: 11px;
 	}
@@ -746,6 +759,9 @@ span.psw {
 
 	.thanhtimkiem__search__canhan {
 		padding-bottom: 10px;
+	}
+	.thanhtimkiem__search__theloai i {
+		display: none;
 	}
 }
 
@@ -994,6 +1010,14 @@ img {
 	height: 2rem;
 	border-radius: 7px;
 	color: white;
+	transition-property: transform;
+	transition-duration: 0.3s;
+	transition-timing-function: ease;
+	transition-delay: 0s;
+}
+
+.gapsach button:hover{
+	transform: translateY(-5px);
 }
 
 .btnyeuthich {
