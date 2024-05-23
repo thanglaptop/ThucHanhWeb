@@ -9,29 +9,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/cssSP.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="js/scripts.js">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
     <!--star-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito Sans:wght@200;300;400;600;900&display=swap" rel="stylesheet">
     <title>Web Sách</title>
 </head>
+
 <body>
+    <!-- phần header -->
     <header class="header">
         <div class="header__top">
             <div class="container-hd">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="col-lg-6 col-md-6">
                         <div class="header__top__left">
-                                    <i class="ri-question-answer-line"></i>
-                                    Chúng tôi có thể giúp gì được cho bạn?
+                            <i class="ri-question-answer-line"></i>
+                            Chúng tôi có thể giúp gì được cho bạn?
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="col-lg-6 col-md-6">
                         <div class="header__top__right">
                             <div class="header__top__right__social">
                                 <!-- facebook -->
@@ -78,14 +78,48 @@
                                 <li><a href="#">Tất cả</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Tủ sách</a></li>
-                        <li><a href="lienhe.html">Liên hệ</a></li>
+                        <li><a href="tusach.html">Tủ sách</a></li>
+                        <li><a href="#">Liên hệ</a></li>
                         <!--login-->
                         <!--start-->
-                        <button class="btn btn-secondary" onclick="document.location='login_form.html'">Đăng
-                            nhập</button>
+                        <button class="btn btn-secondary"
+                            onclick="document.getElementById('id01').style.display='block'">Đăng nhập</button>
 
-                        <!--end-->
+                        <!--form-->
+                        <div id="id01" class="modal">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                title="Close Modal">&times;</span>
+
+                            <!--content-->
+                            <form class="modal-content animate" action="img/gia_huy.jpg">
+                                <div class="container-lg">
+                                    <img src="img/za huy tre tui.jpg" alt="Avatar" class="avatar">
+                                </div>
+
+                                <div class="container-frm">
+                                    <label for="uname"><b>Tài khoản</b></label>
+                                    <input type="text" placeholder="Enter Username" name="uname" required class="user">
+
+                                    <label for="psw"><b>Mật khẩu</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required
+                                        class="pass">
+
+                                    <button id="login" type="submit" class="btn btn-primary">Đăng nhập</button>
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember"> Lưu mật khẩu
+                                    </label>
+                                </div>
+
+                                <div class="container-qm" style="background-color:#f1f1f1">
+                                    <button class="btn btn-primary" type="button"
+                                        onclick="document.getElementById('id01').style.display='none'"
+                                        class="cancelbtn">Cút</button>
+                                    <span class="psw"><a href="#">Quên mật khẩu</a></span>
+                                </div>
+                            </form>
+                            <!--end form-->
+
+                            <!--end-->
                     </ul>
                 </nav>
             </div>
@@ -106,7 +140,7 @@
                 <div class="col-lg-2 col-md-2">
                     <div class="thanhtimkiem__logo">
                         <a href="./index.html">
-                            <img src="img/logo.png" alt=""></a>
+                            <img width="100px" src="img/logo.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-7 col-10 col-sm-9 col-md-7">
@@ -116,7 +150,7 @@
                                 <div class="thanhtimkiem__search__theloai">
                                     <strong>
                                         Thể Loại
-                                        <i class="ri-arrow-drop-down-line"></i>
+                                        <i class="ri-arrow-down-s-line"></i>
                                     </strong>
                                     <ul class="thanhtimkiem_list">
                                         <li><a href="#">Kinh Dị</a></li>
@@ -140,22 +174,23 @@
                             <i class="ri-close-circle-line item2"></i>
                         </a>
                     </div>
-                    <script src="/WebThuVien/js/scripts.js"></script>
                 </div>
                 <div class="col-lg-3 col-2 col-sm-3 col-md-3">
-                    <div class="thanhtimkiem__search__canhan">
-                        <a href=""><i class="ri-user-line"></i></a>
-                        <a href=""><i class="ri-bookmark-3-line"></i></a>
-                        <a href=""><i class="ri-list-unordered"></i></a>
+                    <div class="thanhtimkiem__search__canhan" id="my_canhan">
+                        <a href="ttcn.html"><i class="ri-user-line"></i></a>
+                        <a href="#"><i class="ri-bookmark-3-line"></i></a>
+                        <a href="javascript:void(0);" onclick="myFunction2()"><i class="ri-list-unordered"></i></a>
                     </div>
                 </div>
             </div>
             <hr>
         </div>
+        <script src="js/scripts.js"></script>
+
     </section>
-    <!-- ket thuc tim kiem section -->
-    <!--------------------SanPham----------------------->
-    <div class="san_pham">
+
+     <!--------------------SanPham----------------------->
+     <div class="san_pham">
         <div class="container">
             <div class="san_pham_content row col-md-12 col-12">
                 <div class="san_pham_left row">
@@ -246,6 +281,7 @@
         </div>
     </div>
     <!--------------------SanPham-------------------------->
+    
     <!--footer-->
     <!--start footer-->
     <div class="footer-container">
@@ -260,9 +296,9 @@
             </div>
             <div class="links">
                 <p>Thông tin</p>
-                <a href="index.html" class="link">Thư viện</a>
-                <a href="gioithieu.html" class="link">Về chúng tôi</a>
-                <a href="gioithieu.html" class="link">Blog</a>
+                <a href="" class="link">Thư viện</a>
+                <a href="" class="link">Về chúng tôi</a>
+                <a href="" class="link">Blog</a>
             </div>
             <div class="links">
                 <p>Hỗ trợ</p>
@@ -271,9 +307,9 @@
             </div>
             <div class="links">
                 <p>Liên kết</p>
-                <a href="index.html" class="link">Trang chủ</a>
-                <a href="gioithieu.html" class="link">Về</a>
-                <a href="https://www.facebook.com/giahuy.lyngoc.35" class="link">Kết nối</a>
+                <a href="" class="link">Trang chủ</a>
+                <a href="" class="link">Về</a>
+                <a href="" class="link">Kết nối</a>
             </div>
         </div>
     </div>
