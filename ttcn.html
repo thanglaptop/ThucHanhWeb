@@ -78,7 +78,7 @@
                             </ul>
                         </li>
                         <li><a href="tusach.html">Tủ sách</a></li>
-                        <li><a href="#">Liên hệ</a></li>
+                        <li><a href="lienhe.html">Liên hệ</a></li>
                         <!--login-->
                         <!--start-->
                         <button class="btn btn-secondary"
@@ -185,48 +185,100 @@
             <hr>
         </div>
         <script src="js/scripts.js"></script>
-
     </section>
+    <!-- end section thanh tìm kiếm -->
 
     <section>
-        <img src="img/hinhlienhe/chongsach.png" alt="" class="hinh1" style="width: 400px;">
-        <img src="img/hinhlienhe/chongsach.png" alt="" class="hinh2" style="width: 400px;">
-
         <div class="container_gioithieu">
             <div class="row">
-                <h1>Liên Hệ</h1>
-            </div>
-            <div class="row">
-                <div class="col-lg-7">
-                    <div class="lienhe">
-                        <div class="content_lienhe">
-                            <h1>Thư Viện Thục Hán</h1>
-                            <h3>Thuchanlibrary.com</h3>
-                            <hr>
-                            <div><i class="ri-phone-line"> contact: </i>+84 989 825 930</div>
-                            <div><i class="ri-mail-fill"> email: </i>thuchanlibrary@gmail.com</div>
-                            <br>
-                            <div>Chúng tôi luôn sẵn lòng giải đáp thắc mắc</div>
-                            <div>của các bạn!</div>
-                        </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="personal">
+                        <div>Gia Huy</div>
+                        <img src="img/gia_huy.jpg" alt="">
                     </div>
-                    <img src="img/hinhlienhe/sach-anime.png" alt="" class="hinh3">
+                    <div class="personal_btn">
+                        <a href="#" id="naptien"> Nạp Tiền</a>
+                        <a href="#" id="dangkyhoivien">Trở thành hội viên</a>
+                    </div>
+                    <hr>
+                    <div class="personal_list">
+                        <a href="#"><i class="ri-user-3-line"></i> Quản lý tài khoản</a>
+                        <a href="#"><i class="ri-book-line"></i> Tủ sách cá nhân</a>
+                        <a href="#"><i class="ri-medal-line"></i> Thành Tích</a>
+                        <a href="#"><i class="ri-money-dollar-circle-line"></i> Lịch sử giao dịch</a>
+                        <a href="#"><i class="ri-customer-service-line"></i> Hỗ trợ khách hàng</a>
+                        <hr>
+                    </div>
                 </div>
-                <div class="col-lg-5">
-                    <div class="sendemail">
-                        <h1>Thư Viện Thục Hán Có Thể Giúp Đỡ Gì Bạn?</h1>
-                        <form action="#">
-                            <input type="text" placeholder="Tên Của Bạn">
-                            <input type="text" placeholder="Email của bạn">
-                            <input type="text" placeholder="Tiêu Đề">
-                            <textarea name="#" id="#" placeholder="nội dung"></textarea>
-                            <button type="submit">gửi email</button>
-                        </form>
+                <div class="col-lg-8 col-md-8">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <h3 class="h3title">Quản lý thông tin</h3>
+                            <div class="tab">
+                                <button class="tabthongtin" onclick="mothongtin(event,'ttcn')">Thông tin cá
+                                    nhân</button>
+                                <button class="tabthongtin" onclick="mothongtin(event,'tkbm')">Tài khoản và bảo
+                                    mật</button>
+                                <button class="tabthongtin" onclick="mothongtin(event,'ttlk')">Tài khoản liên
+                                    kết</button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row tabcontent thongtincanhan" id="ttcn" style="display: flex;">
+                            <div class="col-lg-8 col-md-8">
+                                <div class="personal_info">
+                                    <form action="#">
+                                        <div class="inputbox">
+                                            <input type="text" value="giahuylyngoc123">
+                                            <span>tên đăng nhập</span>
+                                        </div>
+                                        <div class="inputbox">
+                                            <input type="text" value="9017947">
+                                            <span>ID người dùng</span>
+                                        </div>
+                                        <div class="inputbox">
+                                            <input type="text" value="Lý Ngọc Gia Huy">
+                                            <span>Họ và tên</span>
+                                        </div>
+                                        <div class="otherinfo">
+                                            <div class="inputbox">
+                                                <input type="date" value="2003-05-22">
+                                                <span>Ngày sinh</span>
+                                            </div>
+                                            <div class="inputbox">
+                                                <select name="gender" id="gender">
+                                                    <option value="other">Khác</option>
+                                                    <option value="male">Nam</option>
+                                                    <option value="female">Nữ</option>
+                                                </select>
+                                                <span>Giới tính</span>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <button type="submit" class="btncapnhat">Cập nhật</button>
+                                        <button type="submit" class="btnhuy">Hủy</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 changeavatar">
+                                <img src="img/gia_huy.jpg" alt="">
+                                <button>Thay ảnh</button>
+                            </div>
+                        </div>
+                        <div class="tabcontent" id="tkbm">
+                            <h4>Tài khoản bạn đã đạt bảo mật tốt nhất!</h4>
+                        </div>
+                        <div class="tabcontent" id="ttlk">
+                            <h4>Bạn hiện chưa liên kết tài khoản nào!</h4>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
+        <script src="js/scripts.js"></script>
     </section>
+
 
     <!--footer-->
     <!--start footer-->

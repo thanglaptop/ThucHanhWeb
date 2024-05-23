@@ -56,9 +56,7 @@
 
 .header__top__right__language div {
 	font-size: 16px;
-	color: rgb(92, 56, 15);
-	margin-right: 4px;
-	
+	color: rgb(92, 56, 15);	
 }
 
 .header__top__right__language:hover div {
@@ -490,7 +488,8 @@ span.psw {
 .thanhtimkiem__search__form form input {
 	border: none;
 	width: 67%;
-	height: 48px;
+	height: 47px;
+	outline: none;
 	font-size: 16px;
 	color: black;
 	padding: 10px 15px;
@@ -545,6 +544,9 @@ span.psw {
 	transition-timing-function: ease;
 	transition-delay: 0s;
 }
+.thanhtimkiem__search__canhan a:last-child{
+	display: none;
+}
 
 .thanhtimkiem__search__canhan i:hover {
 	background-color: #c9892ade;
@@ -554,7 +556,7 @@ span.psw {
 
 .thanhtimkiem__search .icon {
 	display: none;
-	color: black;
+	color: #5a3e13de;
 }
 
 .container_srch {
@@ -718,12 +720,37 @@ span.psw {
 	.thanhtimkiem__search__canhan {
 		justify-content: flex-end;
 	}
-
+	
+	.thanhtimkiem__search__canhan a:last-child{
+		display: block;
+	}
 	.thanhtimkiem__search__canhan a:not(:last-child) {
 		display: none;
 	}
-}
 
+	.thanhtimkiem__search__canhan.responsive a{
+		display: block;
+	}
+
+}
+.btnkhampha{
+	display: flex;
+	justify-content: center;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+.btnkhampha a{
+	padding: 10px 10px;
+	background-color: #5e2d0c;
+	border-radius: 10px;
+	color: white;
+	font-weight: 500;
+	box-shadow: 0px 0px 10px 1px grey;
+	transition: transform 0.3s ease 0s;
+}
+.btnkhampha a:hover{
+	transform: translateY(-7px);
+}
 @media screen and (max-width: 768px) {
 	.thanhtimkiem__search {
 		padding-bottom: 10px;
@@ -1602,3 +1629,199 @@ body {
 	}
 }
 /* end section liên hệ */
+
+/* section thông tin cá nhân */
+.personal{
+	display: flex;
+	align-items: center;
+	font-size: 30px;
+	font-weight: 600;
+	gap:3rem;
+}
+.personal img{
+	width: 90px;
+	border-radius: 50%;
+}
+.personal_btn{
+	margin-top: 2rem;
+	display: flex;
+	gap: 1rem;
+}
+.personal_btn a{
+	background-color: #914513;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+	border-radius: 40px;
+}
+#naptien{
+	width: 120px;
+	transition-property: transform;
+	transition-duration: 0.3s;
+	transition-timing-function: ease;
+	transition-delay: 0s;
+}
+#naptien:hover{
+	transform: translateY(-5px);
+}
+#dangkyhoivien{
+	width: 220px;
+	transition-property: transform;
+	transition-duration: 0.3s;
+	transition-timing-function: ease;
+	transition-delay: 0s;
+}
+#dangkyhoivien:hover{
+	transform: translateY(-5px);
+}
+.personal_list{
+	display: flex;
+	flex-direction:column;
+	gap: 0.5rem;
+	margin-bottom: 2rem;
+}
+.personal_list a{
+	padding: 7px 1rem;
+	color: #5e2d0c;
+	font-weight: 500;
+	border-radius: 10px;
+	transition-property: transform;
+	transition-duration: 0.3s;
+	transition-timing-function: ease;
+	transition-delay: 0s;
+}
+.personal_list a:hover{
+	background-color: #d3af81;
+	transform: translateY(-5px);
+}
+.personal_info{
+	margin-top: 1rem;
+}
+.personal_info form button{
+	border-radius: 20px;
+	padding: 5px 15px;
+	margin-right: 10px;
+	border: none;
+	color: white;
+}
+.btncapnhat{
+	background-color: #914513;
+	transition-property: transform;
+	transition-duration: 0.3s;
+	transition-timing-function: ease;
+	transition-delay: 0s;
+}
+.btncapnhat:hover{
+	transform: translateY(-5px);
+}
+.btnhuy:hover{
+	transform: translateY(-5px);
+}
+.btnhuy{
+	background-color: #d49062;
+	transition-property: transform;
+	transition-duration: 0.3s;
+	transition-timing-function: ease;
+	transition-delay: 0s;
+}
+.changeavatar{
+	margin-top: 1rem;
+	display: flex;
+	justify-content:flex-start;
+	align-items: center;
+	flex-direction: column;
+}
+.changeavatar img{
+	width: 130px;
+	border-radius: 50%;
+	margin-bottom: 1rem;
+}
+.changeavatar button{
+	border-radius: 20px;
+	padding: 5px 10px;
+	background-color: #d49062;
+	color: white;
+	border: none;
+	transition: transform 0.3s ease 0s;
+}
+.changeavatar button:hover{
+	transform: translateY(-5px);
+}
+.inputbox{
+	position: relative;
+}
+.otherinfo{
+	display:flex;
+	flex-direction: row;
+	gap: 1rem;
+}
+.inputbox input{
+	padding: 1.2rem 1rem 5px 1rem;
+	border-radius: 10px;
+	border: 1px solid rgb(170, 170, 170);
+	width: 100%;
+	margin-bottom: 1rem;
+	background-color: #faf0e6;
+	color: #331806;
+	font-size: 16px;
+}
+.inputbox select{
+	padding: 1.2rem 1rem 5px 1rem;
+	border-radius: 10px;
+	border: 1px solid rgb(170, 170, 170);
+	background-color: #faf0e6;
+	height: 50px;
+	margin-bottom: 1rem;
+	color: #331806;
+	font-size: 16px;
+}
+.inputbox span{
+	position: absolute;
+	top: 5px;
+	left: 1rem;
+	font-size: 12px;
+	color: #331806;
+}
+.thongtincanhan{
+	display: flex;
+}
+@media only screen and (max-width: 768px) {
+	.thongtincanhan{
+		flex-direction:column-reverse;
+	}
+}
+.tab {
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	display: flex;
+  }
+  @media only screen and (max-width: 576px) {
+	.tab{
+		flex-direction: column;
+	}
+  }
+  .h3title{
+	font-weight: 700;
+	color:#3d220f;
+  }
+  .tab button{
+	width: 100%;
+	border-radius: 10px;
+	border: 1px solid rgb(163, 162, 162);
+	padding: 7px 10px;
+	background-color: #723a14;
+	color: white;
+	transition: transform 0.3s ease 0s;
+  }
+  .tab button:hover{
+	transform: translateY(-5px);
+  }
+.tab button.active {
+	background-color: #3d220f;
+  }
+.tabcontent {
+	display: none;
+  }
+/* end section thông tin cá nhân */
