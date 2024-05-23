@@ -9,7 +9,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/cssSP.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="js/scripts.js">
@@ -21,138 +20,138 @@
     <title>Web Sách</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header__top">
-            <div class="container-hd">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <div class="header__top__left">
-                                    <i class="ri-question-answer-line"></i>
-                                    Chúng tôi có thể giúp gì được cho bạn?
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <div class="header__top__right">
-                            <div class="header__top__right__social">
-                                <!-- facebook -->
-                                <a href="https://www.facebook.com/giahuy.lyngoc.35" target="_blank"><i
-                                        class="ri-facebook-box-fill"></i></a>
-                                <!-- instagram -->
-                                <a href="https://www.facebook.com/profile.php?id=61552144349631&mibextid=ZbWKwL"
-                                    target="_blank"><i class="ri-instagram-line"></i></a>
-                            </div>
-                            <div class="header__top__right__language">
-                                <div>Tiếng Việt <i class="ri-arrow-drop-down-fill"></i></div>
-
-                                <ul>
-                                    <li><a href="#">English</a></li>
-                                    <li><a href="#">Chinese</a></li>
-                                    <li><a href="#">Japan</a></li>
-                                </ul>
-                            </div>
-                        </div>
+   <!-- phần header -->
+   <header class="header">
+    <div class="header__top">
+        <div class="container-hd">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="header__top__left">
+                        <i class="ri-question-answer-line"></i>
+                        Chúng tôi có thể giúp gì được cho bạn?
                     </div>
                 </div>
-            </div>
-        </div>
-    </header>
-    <!-- kết thúc header -->
-
-    <!--bat dau menu-->
-    <div class="container-menu">
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="header__logo">
-                    <a href="./index.html"><img src="" alt=""></a>
-                </div>
-            </div>
-            <div class="col-lg-8">
-                <nav class="header__menu">
-                    <ul class="ul-menu">
-                        <li><a href="index.html">Trang chủ</a></li>
-                        <li><a href="gioithieu.html">Giới thiệu</a></li>
-                        <li><a href="#">Danh mục</a>
-                            <ul class="header__menu__dropdown">
-                                <li><a href="#">Tác giả</a></li>
-                                <li><a href="#">Nhà xuất bản</a></li>
-                                <li><a href="#">Tất cả</a></li>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="header__top__right">
+                        <div class="header__top__right__social">
+                            <!-- facebook -->
+                            <a href="https://www.facebook.com/giahuy.lyngoc.35" target="_blank"><i
+                                    class="ri-facebook-box-fill"></i></a>
+                            <!-- instagram -->
+                            <a href="https://www.facebook.com/profile.php?id=61552144349631&mibextid=ZbWKwL"
+                                target="_blank"><i class="ri-instagram-line"></i></a>
+                        </div>
+                        <div class="header__top__right__language">
+                            <div>Tiếng Việt <i class="ri-arrow-drop-down-fill"></i></div>
+                            <ul>
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">Chinese</a></li>
+                                <li><a href="#">Japan</a></li>
                             </ul>
-                        </li>
-                        <li><a href="#">Tủ sách</a></li>
-                        <li><a href="lienhe.html">Liên hệ</a></li>
-                        <!--login-->
-                        <!--start-->
-                        <button class="btn btn-secondary" onclick="document.location='login_form.html'">Đăng
-                            nhập</button>
-
-                        <!--end-->
-                    </ul>
-                </nav>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-3">
-            </div>
-        </div>
-        <div class="humberger__open">
-            <i class="fa fa-bars"></i>
         </div>
     </div>
+</header>
+<!-- kết thúc header -->
 
-    <!--ket thuc menu-->
-    <!-- tim kiem section -->
-    <section class="thanhtimkiem">
-        <div class="container_srch">
-            <div class="row">
-                <hr>
-                <div class="col-lg-2 col-md-2">
-                    <div class="thanhtimkiem__logo">
-                        <a href="./index.html">
-                            <img src="img/logo.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-lg-7 col-10 col-sm-9 col-md-7">
-                    <div class="thanhtimkiem__search" id="mySearchbar">
-                        <div class="thanhtimkiem__search__form">
-                            <form action="#">
-                                <div class="thanhtimkiem__search__theloai">
-                                    <strong>
-                                        Thể Loại
-                                        <i class="ri-arrow-drop-down-line"></i>
-                                    </strong>
-                                    <ul class="thanhtimkiem_list">
-                                        <li><a href="#">Kinh Dị</a></li>
-                                        <li><a href="#">Lãng Mạn</a></li>
-                                        <li><a href="#">Viễn Tưởng</a></li>
-                                        <li><a href="#">Tôn Giáo</a></li>
-                                        <li><a href="#">Lịch Sử</a></li>
-                                        <li><a href="#">Xã Hội</a></li>
-                                        <li><a href="#">Manga</a></li>
-                                        <li><a href="#">Tự Truyện</a></li>
-                                    </ul>
-                                </div>
-                                <input type="text" placeholder="Bạn cần sách gì?">
-                                <button type="submit" class="site-btn">
-                                    <i class="ri-search-eye-line"></i>
-                                </button>
-                            </form>
-                        </div>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <i class="ri-search-line item1"></i>
-                            <i class="ri-close-circle-line item2"></i>
-                        </a>
-                    </div>
-                    <script src="/WebThuVien/js/scripts.js"></script>
-                </div>
-                <div class="col-lg-3 col-2 col-sm-3 col-md-3">
-                    <div class="thanhtimkiem__search__canhan">
-                        <a href=""><i class="ri-user-line"></i></a>
-                        <a href=""><i class="ri-bookmark-3-line"></i></a>
-                        <a href=""><i class="ri-list-unordered"></i></a>
-                    </div>
+<!--bat dau menu-->
+<div class="container-menu">
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="header__logo">
+                <a href="./index.html"><img src="" alt=""></a>
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <nav class="header__menu">
+                <ul class="ul-menu">
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="gioithieu.html">Giới thiệu</a></li>
+                    <li><a href="#">Danh mục</a>
+                        <ul class="header__menu__dropdown">
+                            <li><a href="#">Tác giả</a></li>
+                            <li><a href="#">Nhà xuất bản</a></li>
+                            <li><a href="#">Tất cả</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="tusach.html">Tủ sách</a></li>
+                    <li><a href="lienhe.html">Liên hệ</a></li>
+                    <!--login-->
+                    <!--start-->
+                    <button class="btn btn-secondary" onclick="document.location='login_form.html'">Đăng
+                        nhập</button>
+
+                    <!--end-->
+                </ul>
+            </nav>
+        </div>
+        <div class="col-lg-3">
+        </div>
+    </div>
+    <div class="humberger__open">
+        <i class="fa fa-bars"></i>
+    </div>
+</div>
+
+<!--ket thuc menu-->
+<!-- tim kiem section -->
+<section class="thanhtimkiem">
+    <div class="container_srch">
+        <div class="row">
+            <hr>
+            <div class="col-lg-2 col-md-2">
+                <div class="thanhtimkiem__logo">
+                    <a href="#">
+                        <img src="img/logo.png" alt=""></a>
                 </div>
             </div>
-            <hr>
+            <div class="col-lg-7 col-10 col-sm-9 col-md-7">
+                <div class="thanhtimkiem__search" id="mySearchbar">
+                    <div class="thanhtimkiem__search__form">
+                        <form action="#">
+                            <div class="thanhtimkiem__search__theloai">
+                                <strong>
+                                    Thể Loại
+                                    <i class="ri-arrow-drop-down-line"></i>
+                                </strong>
+                                <ul class="thanhtimkiem_list">
+                                    <li><a href="#">Kinh Dị</a></li>
+                                    <li><a href="#">Lãng Mạn</a></li>
+                                    <li><a href="#">Viễn Tưởng</a></li>
+                                    <li><a href="#">Tôn Giáo</a></li>
+                                    <li><a href="#">Lịch Sử</a></li>
+                                    <li><a href="#">Xã Hội</a></li>
+                                    <li><a href="#">Manga</a></li>
+                                    <li><a href="#">Tự Truyện</a></li>
+                                </ul>
+                            </div>
+                            <input type="text" placeholder="Bạn cần sách gì?">
+                            <button type="submit" class="site-btn">
+                                <i class="ri-search-eye-line"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="ri-search-line item1"></i>
+                        <i class="ri-close-circle-line item2"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-2 col-sm-3 col-md-3">
+                <div class="thanhtimkiem__search__canhan" id="my_canhan">
+                    <a href="ttcn.html"><i class="ri-user-line"></i></a>
+                    <a href="#"><i class="ri-bookmark-3-line"></i></a>
+                    <a href="javascript:void(0);" onclick="myFunction2()"><i class="ri-list-unordered"></i></a>
+                </div>
+            </div>
         </div>
-    </section>
+        <hr>
+    </div>
+    <script src="js/scripts.js"></script>
+</section>
     <!-- ket thuc tim kiem section -->
     <!--------------------SanPham----------------------->
     <div class="san_pham">
