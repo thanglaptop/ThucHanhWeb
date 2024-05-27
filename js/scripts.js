@@ -14,6 +14,14 @@ function myFunction2() {
     x.className = "thanhtimkiem__search__canhan";
   }
 }
+function myFunction3() {
+  var x = document.getElementById("myheadermenu");
+  if (x.className === "header__menu") {
+    x.className += " responsive";
+  } else {
+    x.className = "header__menu";
+  }
+}
 function mothongtin(sukien, tentab) {
   var i, tabcontent, tabthongtin;
   tabcontent = document.getElementsByClassName("tabcontent");

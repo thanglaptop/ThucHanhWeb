@@ -58,77 +58,50 @@
     <!-- kết thúc header -->
 
     <!--bat dau menu-->
-    <div class="container-menu">
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="header__logo">
-                    <a href="./index.html"><img src="" alt=""></a>
-                </div>
-            </div>
-            <div class="col-lg-8">
-                <nav class="header__menu">
-                    <ul class="ul-menu">
-                        <li><a href="index.html">Trang chủ</a></li>
-                        <li><a href="gioithieu.html">Giới thiệu</a></li>
-                        <li><a href="#">Danh mục</a>
+    <section>
+        <div class="container-menu">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="header__menu" id="myheadermenu">
+                        <!-- class="ul-menu"gỷgfhgtrftytrebhyy54gf5f -->
+                        <a id="headercolor" href="index.html">Trang chủ</a>
+                        <a href="gioithieu.html">Giới thiệu</a>
+                        <div href="#">
+                            <a href="#">Danh mục</a>
                             <ul class="header__menu__dropdown">
                                 <li><a href="#">Tác giả</a></li>
                                 <li><a href="#">Nhà xuất bản</a></li>
                                 <li><a href="#">Tất cả</a></li>
                             </ul>
-                        </li>
-                        <li><a href="#">Tủ sách</a></li>
-                        <li><a href="lienhe.html">Liên hệ</a></li>
-                        <!--login-->
-                        <!--start-->
-                        <button class="btn btn-secondary"
-                            onclick="document.getElementById('id01').style.display='block'">Đăng nhập</button>
+                        </div>
 
-                        <!--form-->
-                        <div id="id01" class="modal">
-                            <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                                title="Close Modal">&times;</span>
-
-                            <!--content-->
-                            <form class="modal-content animate" action="img/gia_huy.jpg">
-                                <div class="container-lg">
-                                    <img src="img/za huy tre tui.jpg" alt="Avatar" class="avatar">
+                        <a href="#">Tủ sách</a>
+                        <a href="lienhe.html">Liên hệ</a>
+                        <a id="headercolor" href="login_form.html">Đăng nhập</a>
+                        <div>
+                            <a href="javascript:void(0);" class="iconhead" onclick="myFunction3()">MENU</a>
+                            <div class="menu_dropdown">
+                                <a href="index.html">Trang chủ</a>
+                                <a href="gioithieu.html">Giới thiệu</a>
+                                <div href="#">
+                                    <a href="#">Danh mục</a>
+                                    <ul class="menu_dropdown_left">
+                                        <li><a href="#">Tác giả</a></li>
+                                        <li><a href="#">Nhà xuất bản</a></li>
+                                        <li><a href="#">Tất cả</a></li>
+                                    </ul>
                                 </div>
-
-                                <div class="container-frm">
-                                    <label for="uname"><b>Tài khoản</b></label>
-                                    <input type="text" placeholder="Enter Username" name="uname" required class="user">
-
-                                    <label for="psw"><b>Mật khẩu</b></label>
-                                    <input type="password" placeholder="Enter Password" name="psw" required
-                                        class="pass">
-
-                                    <button id="login" type="submit" class="btn btn-primary">Đăng nhập</button>
-                                    <label>
-                                        <input type="checkbox" checked="checked" name="remember"> Lưu mật khẩu
-                                    </label>
-                                </div>
-
-                                <div class="container-qm" style="background-color:#f1f1f1">
-                                    <button class="btn btn-primary" type="button"
-                                        onclick="document.getElementById('id01').style.display='none'"
-                                        class="cancelbtn">Cút</button>
-                                    <span class="psw"><a href="#">Quên mật khẩu</a></span>
-                                </div>
-                            </form>
-                            <!--end form-->
-
-                            <!--end-->
-                    </ul>
-                </nav>
+                                <a href="#">Tủ Sách</a>
+                                <a href="lienhe.html">Liên Hệ</a>
+                                <a href="login_form.html">Đăng nhập</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-3">
-            </div>
+            <script src="js/scripts.js"></script>
         </div>
-        <div class="humberger__open">
-            <i class="fa fa-bars"></i>
-        </div>
-    </div>
+    </section>
 
     <!--ket thuc menu-->
     <!-- tim kiem section -->

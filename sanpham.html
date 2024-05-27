@@ -16,232 +16,239 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
     <!--star-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito Sans:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito Sans:wght@200;300;400;600;900&display=swap"
+        rel="stylesheet">
     <title>Web Sách</title>
 </head>
+
 <body>
-   <!-- phần header -->
-   <header class="header">
-    <div class="header__top">
-        <div class="container-hd">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="header__top__left">
-                        <i class="ri-question-answer-line"></i>
-                        Chúng tôi có thể giúp gì được cho bạn?
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="header__top__right">
-                        <div class="header__top__right__social">
-                            <!-- facebook -->
-                            <a href="https://www.facebook.com/giahuy.lyngoc.35" target="_blank"><i
-                                    class="ri-facebook-box-fill"></i></a>
-                            <!-- instagram -->
-                            <a href="https://www.facebook.com/profile.php?id=61552144349631&mibextid=ZbWKwL"
-                                target="_blank"><i class="ri-instagram-line"></i></a>
-                        </div>
-                        <div class="header__top__right__language">
-                            <div>Tiếng Việt <i class="ri-arrow-drop-down-fill"></i></div>
-                            <ul>
-                                <li><a href="#">English</a></li>
-                                <li><a href="#">Chinese</a></li>
-                                <li><a href="#">Japan</a></li>
-                            </ul>
+    <!-- phần header -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container-hd">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="header__top__left">
+                            <i class="ri-question-answer-line"></i>
+                            Chúng tôi có thể giúp gì được cho bạn?
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-<!-- kết thúc header -->
-
-<!--bat dau menu-->
-<div class="container-menu">
-    <div class="row">
-        <div class="col-lg-3">
-            <div class="header__logo">
-                <a href="./index.html"><img src="" alt=""></a>
-            </div>
-        </div>
-        <div class="col-lg-8">
-            <nav class="header__menu">
-                <ul class="ul-menu">
-                    <li><a href="index.html">Trang chủ</a></li>
-                    <li><a href="gioithieu.html">Giới thiệu</a></li>
-                    <li><a href="#">Danh mục</a>
-                        <ul class="header__menu__dropdown">
-                            <li><a href="#">Tác giả</a></li>
-                            <li><a href="#">Nhà xuất bản</a></li>
-                            <li><a href="#">Tất cả</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="tusach.html">Tủ sách</a></li>
-                    <li><a href="lienhe.html">Liên hệ</a></li>
-                    <!--login-->
-                    <!--start-->
-                    <button class="btn btn-secondary" onclick="document.location='login_form.html'">Đăng
-                        nhập</button>
-
-                    <!--end-->
-                </ul>
-            </nav>
-        </div>
-        <div class="col-lg-3">
-        </div>
-    </div>
-    <div class="humberger__open">
-        <i class="fa fa-bars"></i>
-    </div>
-</div>
-
-<!--ket thuc menu-->
-<!-- tim kiem section -->
-<section class="thanhtimkiem">
-    <div class="container_srch">
-        <div class="row">
-            <hr>
-            <div class="col-lg-2 col-md-2">
-                <div class="thanhtimkiem__logo">
-                    <a href="#">
-                        <img src="img/logo.png" alt=""></a>
-                </div>
-            </div>
-            <div class="col-lg-7 col-10 col-sm-9 col-md-7">
-                <div class="thanhtimkiem__search" id="mySearchbar">
-                    <div class="thanhtimkiem__search__form">
-                        <form action="#">
-                            <div class="thanhtimkiem__search__theloai">
-                                <strong>
-                                    Thể Loại
-                                    <i class="ri-arrow-drop-down-line"></i>
-                                </strong>
-                                <ul class="thanhtimkiem_list">
-                                    <li><a href="#">Kinh Dị</a></li>
-                                    <li><a href="#">Lãng Mạn</a></li>
-                                    <li><a href="#">Viễn Tưởng</a></li>
-                                    <li><a href="#">Tôn Giáo</a></li>
-                                    <li><a href="#">Lịch Sử</a></li>
-                                    <li><a href="#">Xã Hội</a></li>
-                                    <li><a href="#">Manga</a></li>
-                                    <li><a href="#">Tự Truyện</a></li>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="header__top__right">
+                            <div class="header__top__right__social">
+                                <!-- facebook -->
+                                <a href="https://www.facebook.com/giahuy.lyngoc.35" target="_blank"><i
+                                        class="ri-facebook-box-fill"></i></a>
+                                <!-- instagram -->
+                                <a href="https://www.facebook.com/profile.php?id=61552144349631&mibextid=ZbWKwL"
+                                    target="_blank"><i class="ri-instagram-line"></i></a>
+                            </div>
+                            <div class="header__top__right__language">
+                                <div>Tiếng Việt <i class="ri-arrow-drop-down-fill"></i></div>
+                                <ul>
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">Chinese</a></li>
+                                    <li><a href="#">Japan</a></li>
                                 </ul>
                             </div>
-                            <input type="text" placeholder="Bạn cần sách gì?">
-                            <button type="submit" class="site-btn">
-                                <i class="ri-search-eye-line"></i>
-                            </button>
-                        </form>
+                        </div>
                     </div>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="ri-search-line item1"></i>
-                        <i class="ri-close-circle-line item2"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-2 col-sm-3 col-md-3">
-                <div class="thanhtimkiem__search__canhan" id="my_canhan">
-                    <a href="ttcn.html"><i class="ri-user-line"></i></a>
-                    <a href="#"><i class="ri-bookmark-3-line"></i></a>
-                    <a href="javascript:void(0);" onclick="myFunction2()"><i class="ri-list-unordered"></i></a>
                 </div>
             </div>
         </div>
-        <hr>
-    </div>
-    <script src="js/scripts.js"></script>
-</section>
+    </header>
+    <!-- kết thúc header -->
+
+    <!--bat dau menu-->
+    <section>
+        <div class="container-menu">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="header__menu" id="myheadermenu">
+                        <!-- class="ul-menu"gỷgfhgtrftytrebhyy54gf5f -->
+                        <a id="headercolor" href="index.html">Trang chủ</a>
+                        <a href="gioithieu.html">Giới thiệu</a>
+                        <div href="#">
+                            <a href="#">Danh mục</a>
+                            <ul class="header__menu__dropdown">
+                                <li><a href="#">Tác giả</a></li>
+                                <li><a href="#">Nhà xuất bản</a></li>
+                                <li><a href="#">Tất cả</a></li>
+                            </ul>
+                        </div>
+
+                        <a href="tusach.html">Tủ sách</a>
+                        <a href="lienhe.html">Liên hệ</a>
+                        <a id="headercolor" href="login_form.html">Đăng nhập</a>
+                        <div>
+                            <a href="javascript:void(0);" class="iconhead" onclick="myFunction3()">MENU</a>
+                            <div class="menu_dropdown">
+                                <a href="index.html">Trang chủ</a>
+                                <a href="gioithieu.html">Giới thiệu</a>
+                                <div href="#">
+                                    <a href="#">Danh mục</a>
+                                    <ul class="menu_dropdown_left">
+                                        <li><a href="#">Tác giả</a></li>
+                                        <li><a href="#">Nhà xuất bản</a></li>
+                                        <li><a href="#">Tất cả</a></li>
+                                    </ul>
+                                </div>
+                                <a href="tusach.html">Tủ Sách</a>
+                                <a href="lienhe.html">Liên Hệ</a>
+                                <a href="login_form.html">Đăng nhập</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="js/scripts.js"></script>
+        </div>
+    </section>
+
+    <!--ket thuc menu-->
+    <!-- tim kiem section -->
+    <section class="thanhtimkiem">
+        <div class="container_srch">
+            <div class="row">
+                <hr>
+                <div class="col-lg-2 col-md-2">
+                    <div class="thanhtimkiem__logo">
+                        <a href="#">
+                            <img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-10 col-sm-9 col-md-7">
+                    <div class="thanhtimkiem__search" id="mySearchbar">
+                        <div class="thanhtimkiem__search__form">
+                            <form action="#">
+                                <div class="thanhtimkiem__search__theloai">
+                                    <strong>
+                                        Thể Loại
+                                        <i class="ri-arrow-drop-down-line"></i>
+                                    </strong>
+                                    <ul class="thanhtimkiem_list">
+                                        <li><a href="#">Kinh Dị</a></li>
+                                        <li><a href="#">Lãng Mạn</a></li>
+                                        <li><a href="#">Viễn Tưởng</a></li>
+                                        <li><a href="#">Tôn Giáo</a></li>
+                                        <li><a href="#">Lịch Sử</a></li>
+                                        <li><a href="#">Xã Hội</a></li>
+                                        <li><a href="#">Manga</a></li>
+                                        <li><a href="#">Tự Truyện</a></li>
+                                    </ul>
+                                </div>
+                                <input type="text" placeholder="Bạn cần sách gì?">
+                                <button type="submit" class="site-btn">
+                                    <i class="ri-search-eye-line"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="ri-search-line item1"></i>
+                            <i class="ri-close-circle-line item2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-2 col-sm-3 col-md-3">
+                    <div class="thanhtimkiem__search__canhan" id="my_canhan">
+                        <a href="ttcn.html"><i class="ri-user-line"></i></a>
+                        <a href="#"><i class="ri-bookmark-3-line"></i></a>
+                        <a href="javascript:void(0);" onclick="myFunction2()"><i class="ri-list-unordered"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <script src="js/scripts.js"></script>
+    </section>
     <!-- ket thuc tim kiem section -->
     <!--------------------SanPham----------------------->
     <div class="san_pham">
         <div class="container">
-            <div class="san_pham_content row col-md-12 col-12">
-                <div class="san_pham_left row">
-                    <div class="img_san_pham">
-                        <img src="img/7-thoi-quen-de-thanh-dat_600x856.jpg" alt="">
-                    </div>
-                </div>
-                <div class="san_pham_right">
-                    <div class="san_pham_right_sp_name">
-                        <h1>7 Thói quen của gia huy</h1>
-                        <p>MS: THB1975</p>
-                    </div>
-                    <div class="san_pham_right_sp_gia">
-                        <div class="row">
-                            <div class="price_sp col"><span>1.000/<sup>đ</sup> ngày</span></div>
-                            <div class="price_sp_free col">Miễn phí với gói thành viên</div>
+            <div class="san_pham_content row">
+                <div class="col-lg-5 col-md-5">
+                    <div class="san_pham_left ">
+                        <div class="img_san_pham">
+                            <img src="img/7-thoi-quen-de-thanh-dat_600x856.jpg" alt="">
                         </div>
                     </div>
-
-                    <div class="san_pham_right_sp_wishlist row">
-                        <input
-                            value="favorite-button"
-                            name="favorite-checkbox"
-                            id="favorite"
-                            checked="checked"
-                            type="checkbox"
-                            />
-                        <label class="container_heart" for="favorite">
-                            <svg
-                                class="feather feather-heart"
-                                stroke-linejoin="round"
-                                stroke-linecap="round"
-                                stroke-width="2"
-                                stroke="currentColor"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                height="24"
-                                width="24"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                            <path
-                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
-                            ></path>
-                        </svg>
-                            <div class="action">
-                                <span class="option-1">Thêm vào Wishlist</span>
-                                <span class="option-2">Đã thêm vào Wishlist</span>
+                </div>
+                <div class="col-lg-7 col-md-7">
+                    <div class="san_pham_right ">
+                        <div class="san_pham_right_sp_name">
+                            <h1>7 Thói quen của gia huy</h1>
+                            <p>MS: THB1975</p>
+                        </div>
+                        <div class="san_pham_right_sp_gia">
+                            <div class="row">
+                                <div class="price_sp col"><span>1.000/<sup>đ</sup> ngày</span></div>
+                                <div class="price_sp_free col">Miễn phí với gói thành viên</div>
                             </div>
-                        </label>
-                        <button type="button" class="btn" id="btnthue">Thuê</button>
-                    </div>
+                        </div>
 
-                    <button class="Btn" id="btndktv">
-                        <svg viewBox="0 0 576 512" height="1em" class="logoIcon"><path d="M309 106c11.4-7 19-19.7 19-34c0-22.1-17.9-40-40-40s-40 17.9-40 40c0 14.4 7.6 27 19 34L209.7 220.6c-9.1 18.2-32.7 23.4-48.6 10.7L72 160c5-6.7 8-15 8-24c0-22.1-17.9-40-40-40S0 113.9 0 136s17.9 40 40 40c.2 0 .5 0 .7 0L86.4 427.4c5.5 30.4 32 52.6 63 52.6H426.6c30.9 0 57.4-22.1 63-52.6L535.3 176c.2 0 .5 0 .7 0c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40c0 9 3 17.3 8 24l-89.1 71.3c-15.9 12.7-39.5 7.5-48.6-10.7L309 106z"></path></svg>
-                        ĐĂNG KÝ THÀNH VIÊN
-                      </button>
-                    
-                    <div class="sp_thongtin row">
-                        <div class="col">
-                            <div class="row"><b>Tác giả:</b></div>
-                            <div class="row"><i>Huỳnh Tấn Phát</i></div>
-                            <div class="row"><b>Thể loại:</b></div>
-                            <div class="row"><i>Gia huy</i></div>
+                        <div class="san_pham_right_sp_wishlist row">
+                            <div class="cangiua">
+                                <input value="favorite-button" name="favorite-checkbox" id="favorite" checked="checked"
+                                    type="checkbox" />
+                                <label class="container_heart" for="favorite">
+                                    <svg class="feather feather-heart" stroke-linejoin="round" stroke-linecap="round"
+                                        stroke-width="2" stroke="currentColor" fill="none" viewBox="0 0 24 24"
+                                        height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                        </path>
+                                    </svg>
+                                    <div class="action">
+                                        <span class="option-1">Thêm vào Wishlist</span>
+                                        <span class="option-2">Đã thêm vào Wishlist</span>
+                                    </div>
+                                </label>
+                                <button type="button" class="btn" id="btnthue">Thuê</button>
+                            </div>
                         </div>
-                        <div class="col">
-                            <div class="row"><b>Nhà xuất bản:</b></div>
-                            <div class="row"><i>Kim đồng</i></div>
-                            <div class="row"><b>Ngày xuất bản:</b></div>
-                            <div class="row"><i>10/10/2024</i></div>
-                        </div>
+                        <div class="cangiua">
+                        <button class="Btn" id="btndktv">
+                            <svg viewBox="0 0 576 512" height="1em" class="logoIcon">
+                                <path
+                                    d="M309 106c11.4-7 19-19.7 19-34c0-22.1-17.9-40-40-40s-40 17.9-40 40c0 14.4 7.6 27 19 34L209.7 220.6c-9.1 18.2-32.7 23.4-48.6 10.7L72 160c5-6.7 8-15 8-24c0-22.1-17.9-40-40-40S0 113.9 0 136s17.9 40 40 40c.2 0 .5 0 .7 0L86.4 427.4c5.5 30.4 32 52.6 63 52.6H426.6c30.9 0 57.4-22.1 63-52.6L535.3 176c.2 0 .5 0 .7 0c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40c0 9 3 17.3 8 24l-89.1 71.3c-15.9 12.7-39.5 7.5-48.6-10.7L309 106z">
+                                </path>
+                            </svg>
+                            ĐĂNG KÝ THÀNH VIÊN
+                        </button>
                     </div>
-                    <div class="sp_tomtat_sach">
-                        <p><b><i>Mô tả:</i></b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, iusto amet! Pariatur porro quam adipisci ad, impedit ipsam, exercitationem ea necessitatibus sed tenetur soluta sunt nemo officia numquam atque itaque.</p>
-                    </div>
-                    <!--CHia se-->
-                    <ul>
-                    <li><b>Chia sẻ </b>
-                        <div class="share">
-                            <a href="#"> <i class="fa fa-facebook"></i></a>
-                            <a href="#"> <i class="fa fa-twitter"></i></a>
-                            <a href="#"> <i class="fa fa-instagram"></i></a>
-                            <a href="#"> <i class="fa fa-pinterest"></i></a>
+                        <div class="sp_thongtin row">
+                            <div class="col">
+                                <div class="row"><b>Tác giả:</b></div>
+                                <div class="row"><i>Huỳnh Tấn Phát</i></div>
+                                <div class="row"><b>Thể loại:</b></div>
+                                <div class="row"><i>Gia huy</i></div>
+                            </div>
+                            <div class="col">
+                                <div class="row"><b>Nhà xuất bản:</b></div>
+                                <div class="row"><i>Kim đồng</i></div>
+                                <div class="row"><b>Ngày xuất bản:</b></div>
+                                <div class="row"><i>10/10/2024</i></div>
+                            </div>
                         </div>
-                    </li>
-                    </ul>
+                        <div class="sp_tomtat_sach">
+                            <p><b><i>Mô tả:</i></b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+                                iusto amet! Pariatur porro quam adipisci ad, impedit ipsam, exercitationem ea
+                                necessitatibus sed tenetur soluta sunt nemo officia numquam atque itaque.</p>
+                        </div>
+                        <!--CHia se-->
+                        <ul>
+                            <li><b>Chia sẻ </b>
+                                <div class="share">
+                                    <a href="#"> <i class="fa fa-facebook"></i></a>
+                                    <a href="#"> <i class="fa fa-twitter"></i></a>
+                                    <a href="#"> <i class="fa fa-instagram"></i></a>
+                                    <a href="#"> <i class="fa fa-pinterest"></i></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-        </div>
+            </div>
         </div>
     </div>
     <!--------------------SanPham-------------------------->

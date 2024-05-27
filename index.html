@@ -57,49 +57,56 @@
     <!-- kết thúc header -->
 
     <!--bat dau menu-->
-    <div class="container-menu">
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="header__logo">
-                    <a href="./index.html"><img src="" alt=""></a>
-                </div>
-            </div>
-            <div class="col-lg-8">
-                <nav class="header__menu">
-                    <ul class="ul-menu">
-                        <li><a href="#">Trang chủ</a></li>
-                        <li><a href="gioithieu.html">Giới thiệu</a></li>
-                        <li><a href="#">Danh mục</a>
+    <section>
+        <div class="container-menu">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="header__menu" id="myheadermenu">
+                        <!-- class="ul-menu"gỷgfhgtrftytrebhyy54gf5f -->
+                        <a id="headercolor" class="active" href="#">Trang chủ</a>
+                        <a href="gioithieu.html">Giới thiệu</a>
+                        <div href="#">
+                            <a href="#">Danh mục</a>
                             <ul class="header__menu__dropdown">
                                 <li><a href="#">Tác giả</a></li>
                                 <li><a href="#">Nhà xuất bản</a></li>
                                 <li><a href="#">Tất cả</a></li>
                             </ul>
-                        </li>
-                        <li><a href="tusach.html">Tủ sách</a></li>
-                        <li><a href="lienhe.html">Liên hệ</a></li>
-                        <!--login-->
-                        <!--start-->
-                        <button class="btn btn-secondary" onclick="document.location='login_form.html'">Đăng
-                            nhập</button>
+                        </div>
 
-                        <!--end-->
-                    </ul>
-                </nav>
+                        <a href="tusach.html">Tủ sách</a>
+                        <a href="lienhe.html">Liên hệ</a>
+                        <a id="headercolor" href="login_form.html">Đăng nhập</a>
+                        <div>
+                            <a href="javascript:void(0);" class="iconhead" onclick="myFunction3()">MENU</a>
+                            <div class="menu_dropdown">
+                                <a href="#">Trang chủ</a>
+                                <a href="gioithieu.html">Giới thiệu</a>
+                                <div href="#">
+                                    <a href="#">Danh mục</a>
+                                    <ul class="menu_dropdown_left">
+                                        <li><a href="#">Tác giả</a></li>
+                                        <li><a href="#">Nhà xuất bản</a></li>
+                                        <li><a href="#">Tất cả</a></li>
+                                    </ul>
+                                </div>
+                                <a href="tusach.html">Tủ Sách</a>
+                                <a href="lienhe.html">Liên Hệ</a>
+                                <a href="login_form.html">Đăng nhập</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-3">
-            </div>
+            <script src="js/scripts.js"></script>
         </div>
-        <div class="humberger__open">
-            <i class="fa fa-bars"></i>
-        </div>
-    </div>
+    </section>
 
     <!--ket thuc menu-->
     <!-- tim kiem section -->
     <section class="thanhtimkiem">
         <div class="container_srch">
-            <div class="row" >
+            <div class="row">
                 <hr>
                 <div class="col-lg-2 col-md-2">
                     <div class="thanhtimkiem__logo">
