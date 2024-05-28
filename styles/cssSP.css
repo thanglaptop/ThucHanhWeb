@@ -195,10 +195,7 @@ a:focus {
 	justify-content: center;
 	background-color: #ddc8ab;
 	border-radius: 10px;
-	transition-property: transform;
-	transition-duration: 0.3s;
-	transition-timing-function: ease;
-	transition-delay: 0s;
+	transition: transform 0.3s ease 0s;
 }
 .menu_dropdown {
 	display: none;
@@ -1035,7 +1032,7 @@ span.psw {
 	.cangiua{
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		align-items:center;
 	}
 }
 

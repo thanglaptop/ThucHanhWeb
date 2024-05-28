@@ -642,17 +642,6 @@ span.psw {
 		}
 	}
 
-	@keyframes hieninput {
-		from {
-			display: none;
-			transform: translateX(-367px);
-		}
-
-		to {
-			transform: translateX(0);
-		}
-	}
-
 	@keyframes donginput {
 		from {
 			display: block;
@@ -665,6 +654,16 @@ span.psw {
 	}
 
 	@keyframes hienclose {
+		from {
+			display: none;
+			transform: translateX(-367px);
+		}
+
+		to {
+			transform: translateX(0);
+		}
+	}
+	@keyframes hieninput {
 		from {
 			display: none;
 			transform: translateX(-367px);
