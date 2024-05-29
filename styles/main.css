@@ -1200,7 +1200,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	padding-bottom: 1em;
-	color: #1784ba;
+	color: #704617;
 }
 
 .card .actions button {
@@ -1245,6 +1245,7 @@ body {
 /*footer*/
 /*-----------------*/
 .footer-container {
+	margin-top: 5rem;
 	position: relative;
 	bottom: 0;
 	width: 100%;
@@ -1320,7 +1321,7 @@ body {
 
 .footer-content {
 	background-color: #dfb16d;
-	padding: 100px 40px 40px;
+	padding: 25px 40px 40px;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -1415,7 +1416,6 @@ body {
 	padding-left: 2rem;
 	padding-right: 2rem;
 	padding-top: 2rem;
-	padding-bottom: 5rem;
 }
 
 .container_gioithieu h1 {
