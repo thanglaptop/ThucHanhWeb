@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh mục sản phẩm</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <h1>TOP</h1>
+    </header>
+    <section class="admin-content">
+        <div class="admin-content-left">
+            <ul>
+                <li><a href="#">Danh mục</a>
+                    <ul>
+                        <li><a href="">Thêm danh mục</a></li>
+                        <li><a href="">Full sách</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Loại sách</a>
+                    <ul>
+                        <li><a href="">Thêm thể loại</a></li>
+                        <li><a href="">Full sách</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Sách</a>
+                    <ul>
+                        <li><a href="">Thêm sách</a></li>
+                        <li><a href="">Full sách</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="admin-content-right">
+            <div class="admin-content-right-sach-add">
+                <h1>Thêm Cuốn sách</h1>
+                <form action="" method="POST" enctype="multipart/form-data">
+                    <label for="">Nhập tên cuốn sách <span style="color: red;">*</span></label>
+                    <input type="text">
+                    <label for="">Chọn<span style="color: red;">*</span></label>
+                    <select name="" id="">
+                        <option value="">---Chọn danh mục</option>
+                    </select>
+                    <label for="">Chọn<span style="color: red;">*</span></label>
+                    <select name="" id="">
+                        <option value="">---Chọn Nhà xuất bản</option>
+                    </select>
+                    <label for="">Nhập ngày xuất bản<span style="color: red;">*</span></label>
+                    <input type="text">
+                    <label for="">Nhập giá sách <span style="color: red;">*</span></label>
+                    <input type="text">
+                    <label for="">Nhập mô tả <span style="color: red;">*</span></label>
+                    <textarea name="" id=""></textarea>
+                    <label for="">Thêm hình<span style="color: red;">*</span></label>
+                    <input type="file">
+                    <button type="submit">Thêm</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
