@@ -15,6 +15,7 @@
                 <table>
                     <tr>
                         <th>STT</th>
+                        <th>id</th>
                         <th>Tên sách</th>
                         <th>Nhà xuất bản</th>
                         <th>Thể loại</th>

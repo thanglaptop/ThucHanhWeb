@@ -14,7 +14,7 @@
 
 <div class="admin-content-right">
             <div class="admin-content-right-category-add">
-                <h1>Thêm sách</h1>
+                <h1>Thêm Nha xuat ban</h1>
                 <form action="" method="POST">
                     <input name = "category_name" type="text" placeholder="Nhập tên danh mục">
                     <button type="submit">Thêm</button>
